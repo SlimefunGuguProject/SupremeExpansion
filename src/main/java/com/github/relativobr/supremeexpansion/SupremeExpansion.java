@@ -3,6 +3,7 @@ package com.github.relativobr.supremeexpansion;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -34,7 +35,7 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
 
     if (cfg.getBoolean("options.auto-update") && getDescription().getVersion()
         .startsWith("DEV - ")) {
-     // new GitHubBuildsUpdater(this, getFile(), "RelativoBR/SupremeExpansion/master").start();
+      new GitHubBuildsUpdater(this, getFile(), "RelativoBR/SupremeExpansion/master").start();
     }
 
     instance = this;
