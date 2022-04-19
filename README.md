@@ -2,8 +2,8 @@
 Supreme Expansion is a addon to Slimefun 4 which brings various new resources to craft powerful contains items, gear and machines
 
 
-### [Download](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/)
-[![Build Status](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/badge.svg)](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master)
+[//]: # (### [Download]&#40;https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/&#41;)
+[//]: # ([![Build Status]&#40;https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/badge.svg&#41;]&#40;https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master&#41;)
 
 
 ## Machines
