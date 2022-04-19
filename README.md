@@ -19,7 +19,8 @@ Supreme Expansion is a addon to Slimefun 4 which brings various new resources to
 - **Diamond Quarry** - Generate basic resource
 - **Thornium Quarry** - Generate advanced resource
 - **Nuggets of Supreme Quarry** - Generate advanced resource
-- 
+
+
 ## Generators
 - **Aurum Capacitor** 
 - **Titanium Capacitor** 
@@ -38,7 +39,8 @@ Supreme Expansion is a addon to Slimefun 4 which brings various new resources to
 - **Lumium Generator** - Needs to be below ground to work
 - **Thornium Generator** - Generates energy anywhere
 - **Supreme Generator** - Generates energy anywhere
--
+
+
 ## Gear / Tools
 - **Aurum Tools** - Basic tier
 - **Aurum Weapons** - Basic tier
@@ -67,7 +69,8 @@ Supreme Expansion is a addon to Slimefun 4 which brings various new resources to
 - **Supreme Tools** - Endgame tier
 - **Supreme Weapons** - Endgame tier
 - **Supreme Armor** - Endgame tier
--
+
+
 ## Resource Core
 - **Core of Life** - This core contains fragments of life that have been collected by the world
 - **Core of Death** - This core contains the souls of various entities that have gone beyond
@@ -75,7 +78,8 @@ Supreme Expansion is a addon to Slimefun 4 which brings various new resources to
 - **Core of Block** - This core contains several blocks that have been collected around the world
 - **Core of Nature** - This core contains several natural that have been collected around the world
 - **Core of Alloy** - This core contains several ores that have been collected around the world
--
+
+
 ## Resource Magical
 - **Cetrus Lux** - A super Lux scepter
 - **Cetrus Ventus** - A super Ventus scepter
@@ -86,4 +90,3 @@ Supreme Expansion is a addon to Slimefun 4 which brings various new resources to
 - **Attribute Bomb** - A super Bomb attribute with special effects
 - **Attribute Fortune** - A super Fortune attribute with special effects
 - **Attribute Impetus** - A super Impetus attribute with special effects
-- 
