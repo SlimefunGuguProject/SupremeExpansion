@@ -10,15 +10,15 @@ import org.bukkit.inventory.ItemStack;
 @NoArgsConstructor
 public final class SimpleRecipe {
 
-    private ItemStack item;
-    private ItemStack[] recipe;
+  private ItemStack item;
+  private ItemStack[] recipe;
 
-    public ItemStack getItem(){
-        return this.item;
-    }
+  public ItemStack getItem() {
+    return this.item;
+  }
 
-    public ItemStack[] getRecipe(){
-        return recipe;
-    }
+  public ItemStack[] getRecipe() {
+    return recipe;
+  }
 
 }

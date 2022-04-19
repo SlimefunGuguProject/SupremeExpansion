@@ -1,16 +1,18 @@
 package br.com.ohanacraft.supremeexpansion.machine.multiBlock;
 
 import br.com.ohanacraft.supremeexpansion.SupremeExpansion;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
 import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.slimefun4.libraries.paperlib.PaperLib;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import me.mrCookieSlime.Slimefun.cscorelib2.inventory.ItemUtils;
+import java.util.List;
+import javax.annotation.ParametersAreNonnullByDefault;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -19,111 +21,106 @@ import org.bukkit.block.BlastFurnace;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Dispenser;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.FurnaceInventory;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.List;
-import java.util.Map;
 
 public class GearFabricator extends MultiBlockMachine implements NotPlaceable {
 
-    private final SupremeExpansion plugin;
+  public static final SlimefunItemStack GEAR_FABRICATOR = new SlimefunItemStack(
+      "MACHINE_GEAR_FABRICATOR",
+      Material.SMITHING_TABLE, "&eGear Fabricator",
+      "", "&7&oYou can craft weapons, armor and tools here!",
+      "", "&aMultiBlock Machine");
+  public static final RecipeType MACHINE_GEAR_FABRICATOR = new RecipeType(
+      new NamespacedKey(SupremeExpansion.instance,
+          "MACHINE_GEAR_FABRICATOR_KEY"), GEAR_FABRICATOR);
+  private final SupremeExpansion plugin;
 
-    public static final SlimefunItemStack GEAR_FABRICATOR = new SlimefunItemStack("MACHINE_GEAR_FABRICATOR",
-            Material.SMITHING_TABLE, "&eGear Fabricator",
-            "", "&7&oYou can craft weapons, armor and tools here!",
-            "", "&aMultiBlock Machine");
-
-    public static final RecipeType MACHINE_GEAR_FABRICATOR = new RecipeType(new NamespacedKey(SupremeExpansion.instance,
-            "MACHINE_GEAR_FABRICATOR_KEY"), GEAR_FABRICATOR);
-
-    @ParametersAreNonnullByDefault
-    public GearFabricator(SupremeExpansion plugin, Category category) {
-        super(category, GEAR_FABRICATOR, new ItemStack[] {
-                        new ItemStack(Material.ENCHANTING_TABLE), new ItemStack(Material.DISPENSER), new ItemStack(Material.SMITHING_TABLE),
-                        new ItemStack(Material.BLUE_STAINED_GLASS_PANE), new ItemStack(Material.ANVIL), new ItemStack(Material.RED_STAINED_GLASS_PANE),
-                        new ItemStack(Material.BLUE_STAINED_GLASS_PANE), new ItemStack(Material.BLAST_FURNACE), new ItemStack(Material.RED_STAINED_GLASS_PANE) },
-                new ItemStack[0], BlockFace.SELF);
-        this.plugin = plugin;
-    }
-
-    public static RecipeType getMachine() {
-        return MACHINE_GEAR_FABRICATOR;
-    }
-
-    @Override
-    public void onInteract(Player p, Block b) {
-        interactGearMachine(plugin, this, p, b);
-    }
+  @ParametersAreNonnullByDefault
+  public GearFabricator(SupremeExpansion plugin, ItemGroup category) {
+    super(category, GEAR_FABRICATOR, new ItemStack[]{
+            new ItemStack(Material.ENCHANTING_TABLE), new ItemStack(Material.DISPENSER),
+            new ItemStack(Material.SMITHING_TABLE),
+            new ItemStack(Material.BLUE_STAINED_GLASS_PANE), new ItemStack(Material.ANVIL),
+            new ItemStack(Material.RED_STAINED_GLASS_PANE),
+            new ItemStack(Material.BLUE_STAINED_GLASS_PANE), new ItemStack(Material.BLAST_FURNACE),
+            new ItemStack(Material.RED_STAINED_GLASS_PANE)},
+        new ItemStack[0], BlockFace.SELF);
+    this.plugin = plugin;
+  }
 
 
-    public static void interactGearMachine(SupremeExpansion plugin, MultiBlockMachine machine, Player p, Block b) {
+  public static RecipeType getMachine() {
+    return MACHINE_GEAR_FABRICATOR;
+  }
 
-        Block dispenser = b.getRelative(BlockFace.UP);
-        if(!dispenser.isEmpty()) {
+  public static void interactGearMachine(SupremeExpansion plugin, MultiBlockMachine machine,
+      Player p, Block b) {
 
-            BlastFurnace blastFurnace = (BlastFurnace) PaperLib.getBlockState(b.getRelative(BlockFace.DOWN), false).getState();
-            FurnaceInventory furnaceInventory = blastFurnace.getInventory();
+    Block dispenser = b.getRelative(BlockFace.UP);
+    if (!dispenser.isEmpty()) {
 
-            Inventory inv = ((Dispenser) dispenser.getState()).getInventory();
-            List<ItemStack[]> inputs = RecipeType.getRecipeInputList(machine);
+      BlastFurnace blastFurnace = (BlastFurnace) PaperLib.getBlockState(
+          b.getRelative(BlockFace.DOWN), false).getState();
+      FurnaceInventory furnaceInventory = blastFurnace.getInventory();
 
-            recipe:
-            for (ItemStack[] input : inputs) {
-                for (int i = 0; i < inv.getContents().length; i++) {
-                    final ItemStack content = inv.getContents()[i];
-                    final ItemStack itemStack = input[i];
-                    if(itemStack != null) {
-                        final Map<Enchantment, Integer> enchantments = itemStack.getEnchantments();
-                        if (!SlimefunUtils.isItemSimilar(content, itemStack, true, true)
-                                || (!enchantments.isEmpty() && enchantments.equals(content.getEnchantments()))) {
-                            continue recipe;
-                        }
-                    } else if(content != null) {
-                        continue recipe;
-                    }
-                }
+      Inventory inv = ((Dispenser) dispenser.getState()).getInventory();
+      List<ItemStack[]> inputs = RecipeType.getRecipeInputList(machine);
 
-                ItemStack output = RecipeType.getRecipeOutputList(machine, input);
-                SlimefunItem outputItem = SlimefunItem.getByItem(output);
-
-                if (outputItem == null || outputItem.canUse(p, true)) {
-
-                    if (furnaceInventory.getResult() != null) {
-                        SlimefunPlugin.getLocalization().sendMessage(p, "machines.full-inventory", true);
-                        return;
-                    }
-
-                    for (int i = 0; i < inv.getContents().length; i++) {
-                        ItemStack item = inv.getItem(i);
-                        if (item != null) {
-                            ItemUtils.consumeItem(item, input[i].getAmount(), false);
-                        }
-                    }
-
-                    Bukkit.getScheduler().runTaskLater(plugin, () -> p.getWorld().playSound(dispenser.getLocation(),
-                            Sound.BLOCK_LAVA_EXTINGUISH, 1F, 1F), 55L);
-                    for (int i = 1; i < 7; i++) {
-                        Bukkit.getScheduler().runTaskLater(plugin, () -> p.getWorld().playSound(dispenser.getLocation(),
-                                Sound.BLOCK_METAL_PLACE, 7F, 1F), i * 5L);
-                    }
-
-                    if (furnaceInventory.getResult() == null) {
-                        furnaceInventory.setResult(output);
-                    }
-
-                }
-
-                return;
-
+      recipe:
+      for (ItemStack[] input : inputs) {
+        for (int i = 0; i < inv.getContents().length; i++) {
+            if (!SlimefunUtils.isItemSimilar(inv.getContents()[i], input[i], false, true)) {
+                continue recipe;
             }
         }
 
-        SlimefunPlugin.getLocalization().sendMessage(p, "machines.pattern-not-found", true);
+        ItemStack output = RecipeType.getRecipeOutputList(machine, input);
+        SlimefunItem outputItem = SlimefunItem.getByItem(output);
 
+        if (outputItem == null || outputItem.canUse(p, true)) {
+
+          if (furnaceInventory.getResult() != null) {
+            Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
+            return;
+          }
+
+          for (int i = 0; i < inv.getContents().length; i++) {
+            ItemStack item = inv.getItem(i);
+            if (item != null) {
+              ItemUtils.consumeItem(item, input[i].getAmount(), false);
+            }
+          }
+
+          Bukkit.getScheduler()
+              .runTaskLater(plugin, () -> p.getWorld().playSound(dispenser.getLocation(),
+                  Sound.BLOCK_LAVA_EXTINGUISH, 1F, 1F), 55L);
+          for (int i = 1; i < 7; i++) {
+            Bukkit.getScheduler()
+                .runTaskLater(plugin, () -> p.getWorld().playSound(dispenser.getLocation(),
+                    Sound.BLOCK_METAL_PLACE, 7F, 1F), i * 5L);
+          }
+
+          if (furnaceInventory.getResult() == null) {
+            furnaceInventory.setResult(output);
+          }
+
+        }
+
+        return;
+
+      }
     }
+
+    Slimefun.getLocalization().sendMessage(p, "machines.pattern-not-found", true);
+
+  }
+
+  @Override
+  public void onInteract(Player p, Block b) {
+    interactGearMachine(plugin, this, p, b);
+  }
 
 }

@@ -1,6 +1,6 @@
 # -------------------------------
 # -------------------------------
-# Site: OhanaCraft.com.br
+# IP Server BR 1.18: Jogar.OhanaCraft.com.br
 # -------------------------------
 # -------------------------------
 options:
@@ -64,6 +64,7 @@ supreme-enchant:
     unbreakable: false
     unbreaking: 8
     sharpness: 8
+    fire_aspect: 2
   weapons_aurum_sword:
     unbreakable: false
     looting: 3
@@ -75,20 +76,20 @@ supreme-enchant:
   weapons_thornium_sword:
     unbreakable: true
     sharpness: 7
-    looting: 3
+    looting: 5
     fire_aspect: 3
     mending: 7
   weapons_thornium_sword_magic:
     unbreakable: true
     sharpness: 16
-    looting: 5
-    fire_aspect: 5
+    looting: 6
+    fire_aspect: 6
     mending: 10
   weapons_thornium_sword_rare:
     unbreakable: true
     sharpness: 24
-    looting: 7
-    fire_aspect: 7
+    looting: 8
+    fire_aspect: 8
     mending: 10
   weapons_thornium_sword_epic:
     unbreakable: true
@@ -279,6 +280,18 @@ supreme-enchant:
     fortune: 30
     mending: 20
     unbreaking: 50
+  tools_titanium_shovel:
+    unbreakable: false
+    efficiency: 7
+    unbreaking: 7
+  tools_aurum_shovel:
+    unbreakable: false
+    fortune: 3
+    mending: 1
+  tools_adamantium_shovel:
+    unbreakable: false
+    efficiency: 10
+    unbreaking: 10
   tools_thornium_shovel:
     unbreakable: true
     efficiency: 7
@@ -315,6 +328,138 @@ supreme-enchant:
     fortune: 30
     mending: 20
     unbreaking: 50
+  armor_adamantium_helmet:
+    unbreakable: false
+    protection: 7
+    unbreaking: 7
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 0
+    fall_damage: 0
+    depth_strider: 0
+    mending: 0
+  armor_aurum_helmet:
+    unbreakable: false
+    protection: 5
+    unbreaking: 5
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 0
+    fall_damage: 0
+    depth_strider: 0
+    mending: 1
+  armor_titanium_helmet:
+    unbreakable: false
+    protection: 6
+    unbreaking: 6
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 5
+    fall_damage: 0
+    depth_strider: 0
+    mending: 0
+  armor_adamantium_chestplate:
+    unbreakable: false
+    protection: 7
+    unbreaking: 7
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 0
+    fall_damage: 0
+    depth_strider: 0
+    mending: 0
+  armor_aurum_chestplate:
+    unbreakable: false
+    protection: 5
+    unbreaking: 5
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 0
+    fall_damage: 0
+    depth_strider: 0
+    mending: 1
+  armor_titanium_chestplate:
+    unbreakable: false
+    protection: 6
+    unbreaking: 6
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 5
+    fall_damage: 0
+    depth_strider: 0
+    mending: 0
+  armor_adamantium_leggings:
+    unbreakable: false
+    protection: 7
+    unbreaking: 7
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 0
+    fall_damage: 0
+    depth_strider: 0
+    mending: 0
+  armor_aurum_leggings:
+    unbreakable: false
+    protection: 5
+    unbreaking: 5
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 0
+    fall_damage: 0
+    depth_strider: 0
+    mending: 1
+  armor_titanium_leggings:
+    unbreakable: false
+    protection: 6
+    unbreaking: 6
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 5
+    fall_damage: 0
+    depth_strider: 0
+    mending: 0
+  armor_adamantium_boots:
+    unbreakable: false
+    protection: 7
+    unbreaking: 7
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 0
+    fall_damage: 2
+    depth_strider: 2
+    mending: 0
+  armor_aurum_boots:
+    unbreakable: false
+    protection: 5
+    unbreaking: 5
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 0
+    fall_damage: 2
+    depth_strider: 2
+    mending: 1
+  armor_titanium_boots:
+    unbreakable: false
+    protection: 6
+    unbreaking: 6
+    fire_protection: 2
+    blast_protection: 2
+    projectile_protection: 2
+    thorns: 5
+    fall_damage: 2
+    depth_strider: 2
+    mending: 0
   armor_thornium_boots:
     unbreakable: true
     protection: 7

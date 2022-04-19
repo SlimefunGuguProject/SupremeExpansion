@@ -9,21 +9,22 @@ import javax.annotation.Nonnull;
 
 public class SetupBasicMachine {
 
-    public static void setup(@Nonnull SupremeExpansion plugin) {
+  public static void setup(@Nonnull SupremeExpansion plugin) {
 
-        // define CoreFabricator
-        CoreFabricator coreFabricator = new CoreFabricator(plugin, Categories.MACHINES_CATEGORY);
-        coreFabricator.register(plugin);
+    // define CoreFabricator
+    CoreFabricator coreFabricator = new CoreFabricator(plugin, Categories.MACHINES_CATEGORY);
+    coreFabricator.register(plugin);
 
-        // define MagicalFabricator
-        MagicalFabricator magicalFabricator = new MagicalFabricator(plugin, Categories.MACHINES_CATEGORY);
-        magicalFabricator.register(plugin);
+    // define MagicalFabricator
+    MagicalFabricator magicalFabricator = new MagicalFabricator(plugin,
+        Categories.MACHINES_CATEGORY);
+    magicalFabricator.register(plugin);
 
-        // define GearFabricator
-        GearFabricator gearFabricator = new GearFabricator(plugin, Categories.MACHINES_CATEGORY);
-        gearFabricator.register(plugin);
+    // define GearFabricator
+    GearFabricator gearFabricator = new GearFabricator(plugin, Categories.MACHINES_CATEGORY);
+    gearFabricator.register(plugin);
 
-    }
+  }
 
 
 }

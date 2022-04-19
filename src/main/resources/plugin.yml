@@ -1,8 +1,8 @@
 name: SupremeExpansion
-author: RelativoBR
-description:  more slimefun content in supreme expansion
+author: RelativoBR, Especttra e WilianSantos
+description: SlimeFun custom contains supreme items, weapons and machines
 main: br.com.ohanacraft.supremeexpansion.SupremeExpansion
-website: https://github.com/OhanaCraft/SupremeExpansion-Public
+website: https://github.com/RelativoBR/SupremeExpansion
 depend: [Slimefun]
 version: ${project.version}
-api-version: 1.16
+api-version: 1.18
