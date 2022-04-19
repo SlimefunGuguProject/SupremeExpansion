@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.relativobr</groupId>
     <artifactId>SupremeExpansion</artifactId>
-    <version>MODIFIED</version>
+    <version>v2.1.0</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -39,7 +39,7 @@
     </pluginRepositories>
 
     <build>
-        <finalName>${project.name} ${project.version}</finalName>
+        <finalName>${project.name} - v${project.version}</finalName>
         <defaultGoal>clean package</defaultGoal>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
