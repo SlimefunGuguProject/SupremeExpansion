@@ -9,8 +9,8 @@ Minecraft Version: 1.17+
 Slimefun Version: RC-31
 
 
-### [Download](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/)
-[![Build Status](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/badge.svg)](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master)
+### [Download](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/main/)
+[![Build Status](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/main/badge.svg)](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/main)
 
 
 ## Bugs/Suggestions
