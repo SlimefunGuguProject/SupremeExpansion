@@ -42,9 +42,9 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
         instance = this;
 
         // build supreme expansion
-        SupremeExpansion.inst().log(Level.INFO, "### 正在加载 至高科技 ###");
+        SupremeExpansion.inst().log(Level.INFO, "### 正在加载 至尊研究院 ###");
         Setup.setup(this);
-        SupremeExpansion.inst().log(Level.INFO, "### 完成加载 至高科技 ###");
+        SupremeExpansion.inst().log(Level.INFO, "### 完成加载 至尊研究院 ###");
 
     }
 
@@ -98,8 +98,8 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
                 lore.add("");
             }
 
-            lore.add(ChatColor.LIGHT_PURPLE + "Supreme Expansion");
-            lore.add(ChatColor.AQUA + "Soulbound");
+            lore.add(ChatColor.LIGHT_PURPLE + "至尊研究院");
+            lore.add(ChatColor.AQUA + "灵魂绑定");
 
             // find path
             String itemPath = item.getItemId().toLowerCase();
@@ -112,20 +112,20 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
             }
 
             if (itemPath.contains("helmet")) {
-                lore.add(ChatColor.DARK_PURPLE + "Night Vision " + amplifier);
-                lore.add(ChatColor.DARK_PURPLE + "Conduit Power " + amplifier);
-                lore.add(ChatColor.DARK_PURPLE + "Water Breathing " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "夜视 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "潮涌能量 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "水下呼吸 " + amplifier);
             } else if (itemPath.contains("chestplate")) {
-                lore.add(ChatColor.DARK_PURPLE + "Damage Resistance " + amplifier);
-                lore.add(ChatColor.DARK_PURPLE + "Increase Damage " + amplifier);
-                lore.add(ChatColor.DARK_PURPLE + "Saturation " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "触及半径 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "力量 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "饱和 " + amplifier);
             } else if (itemPath.contains("leggings")) {
-                lore.add(ChatColor.DARK_PURPLE + "Speed " + amplifier);
-                lore.add(ChatColor.DARK_PURPLE + "Fast Digging " + amplifier);
-                lore.add(ChatColor.DARK_PURPLE + "Regeneration " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "速度 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "急迫 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "生命恢复 " + amplifier);
             } else if (itemPath.contains("boots")) {
-                lore.add(ChatColor.DARK_PURPLE + "Dolphins Grace " + amplifier);
-                lore.add(ChatColor.DARK_PURPLE + "Fire Resistance " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "海豚的恩惠 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "防火 " + amplifier);
             }
 
             meta.setLore(lore);
@@ -170,8 +170,8 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
                 lore.add("");
             }
 
-            lore.add(ChatColor.LIGHT_PURPLE + "Supreme Expansion");
-            lore.add(ChatColor.AQUA + "Soulbound");
+            lore.add(ChatColor.LIGHT_PURPLE + "至尊研究院");
+            lore.add(ChatColor.AQUA + "灵魂绑定");
 
             // find path
             String itemPath = item.getItemId().toLowerCase();
