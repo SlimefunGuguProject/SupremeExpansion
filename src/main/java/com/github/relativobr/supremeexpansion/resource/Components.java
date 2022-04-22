@@ -345,7 +345,7 @@ public class Components {
 
   public static final SlimefunItemStack PETRIFIER_MACHINE = new SlimefunItemStack(
       "RESOURCE_PETRIFIER_MACHINE",
-      Material.DEAD_TUBE_CORAL_BLOCK, "&a石化核心", "", "&c用于制作基础至尊机器);
+      Material.DEAD_TUBE_CORAL_BLOCK, "&a石化核心", "", "&c用于制作基础至尊机器");
   public static final ItemStack[] RECIPE_PETRIFIER_MACHINE = {
       new ItemStack(CoreAlloy.RESOURCE_CORE_COAL), new ItemStack(RUSTLESS_MACHINE),
       new ItemStack(CoreAlloy.RESOURCE_CORE_COAL),
