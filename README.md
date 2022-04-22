@@ -1,6 +1,5 @@
 # Supreme Expansion
-Supreme Expansion is a addon to Slimefun 4 which brings various new resources to craft powerful contains items, gear and machines
-
+Supreme Expansion is an addon for Slimefun which adds 100+ various new resources that will allow you to craft powerful new items, weapons, tools and armor. These can be made up from titanium, aurum, adamantium, thornium with some being magical, rare, epic, legendary or supreme! It also adds 12 new electric generators, 5 new capacitors and even more... 
 
 ## Requirements
 
