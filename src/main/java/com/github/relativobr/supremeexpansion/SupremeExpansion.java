@@ -116,7 +116,7 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
                 lore.add(ChatColor.DARK_PURPLE + "潮涌能量 " + amplifier);
                 lore.add(ChatColor.DARK_PURPLE + "水下呼吸 " + amplifier);
             } else if (itemPath.contains("chestplate")) {
-                lore.add(ChatColor.DARK_PURPLE + "触及半径 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "伤害吸收 " + amplifier);
                 lore.add(ChatColor.DARK_PURPLE + "力量 " + amplifier);
                 lore.add(ChatColor.DARK_PURPLE + "饱和 " + amplifier);
             } else if (itemPath.contains("leggings")) {
