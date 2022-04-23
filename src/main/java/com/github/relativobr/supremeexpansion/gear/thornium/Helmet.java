@@ -10,7 +10,7 @@ public class Helmet {
 
   public static final SlimefunItemStack THORNIUM_HELMET = new SlimefunItemStack(
       "ARMOR_THORNIUM_HELMET",
-      Material.NETHERITE_HELMET, "&f&l钍石头盔", "&f&l由钍做的头盔");
+      Material.NETHERITE_HELMET, "&f&l钍石头盔", "&f&l由钍制成的头盔");
   public static final ItemStack[] RECIPE_THORNIUM_HELMET = {
       Components.THORNIUM_INGOT, Cetrus.CETRUS_AQUA, Components.THORNIUM_INGOT,
       Components.THORNIUM_INGOT, null, Components.THORNIUM_INGOT,
