@@ -114,32 +114,32 @@ public class MediumContainerMachine extends AContainer implements NotHopperable,
   private static void invalidInput(BlockMenu menu) {
     menu.replaceExistingItem(InventoryRecipe.MEDIUM_STATUS_SLOT, new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        "&cInput a valid material to start"
+        "&c输入有效材料以启动"
     ));
   }
 
   private static void invalidOutput(BlockMenu menu) {
     menu.replaceExistingItem(InventoryRecipe.MEDIUM_STATUS_SLOT, new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        "&cOutput is full"
+        "&c输出已满"
     ));
   }
 
   private static void noEnergyStart(BlockMenu menu) {
     menu.replaceExistingItem(InventoryRecipe.MEDIUM_STATUS_SLOT, new CustomItemStack(
-        Material.RED_STAINED_GLASS_PANE, "&cConnect energy to start"
+        Material.RED_STAINED_GLASS_PANE, "&c请在启动前通电"
     ));
   }
 
   private static void noEnergyContinue(BlockMenu menu, ItemStack material) {
     menu.replaceExistingItem(InventoryRecipe.MEDIUM_STATUS_SLOT, new CustomItemStack(
-        material, "&cConnect energy to continue"
+        material, "&c通电以维持工作"
     ));
   }
 
   private static void noMaterialContinue(BlockMenu menu, ItemStack material) {
     menu.replaceExistingItem(InventoryRecipe.MEDIUM_STATUS_SLOT, new CustomItemStack(
-        material, "&cDeposit more materials to continue"
+        material, "&c请放入更多材料"
     ));
   }
 
