@@ -12,7 +12,7 @@ public final class Axe {
 
 
   public static final SlimefunItemStack THORNIUM_AXE = new SlimefunItemStack("TOOLS_THORNIUM_AXE",
-      Material.NETHERITE_AXE, "&f&l钍石斧", "&f&l由钍做的斧头");
+      Material.NETHERITE_AXE, "&f&l钍石斧", "&f&l由钍制成的斧头");
   public static final ItemStack[] RECIPE_THORNIUM_AXE = {
       Components.THORNIUM_INGOT, Cetrus.CETRUS_VENTUS, null,
       Components.THORNIUM_INGOT, SlimefunItems.STAFF_ELEMENTAL, null,
