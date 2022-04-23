@@ -13,7 +13,7 @@ public final class Pickaxe {
 
   public static final SlimefunItemStack THORNIUM_PICKAXE = new SlimefunItemStack(
       "TOOLS_THORNIUM_PICKAXE",
-      Material.NETHERITE_PICKAXE, "&f&l钍石镐", "&f&l由钍做的镐子");
+      Material.NETHERITE_PICKAXE, "&f&l钍石镐", "&f&l由钍制成的镐子");
   public static final ItemStack[] RECIPE_THORNIUM_PICKAXE = {
       Components.THORNIUM_INGOT, Cetrus.CETRUS_IGNIS, Components.THORNIUM_INGOT,
       null, SlimefunItems.STAFF_ELEMENTAL, null,
