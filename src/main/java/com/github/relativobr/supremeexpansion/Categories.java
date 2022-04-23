@@ -36,7 +36,7 @@ public class Categories {
       new NamespacedKey(SupremeExpansion.inst(), "ELECTRIC"), MULTI_CATEGORY,
       new CustomItemStack(new SlimefunItemStack("ELECTRIC_ITEM",
           "77400ea19dbd84f75c39ad6823ac4ef786f39f48fc6f84602366ac29b837422", "Eletric Item"),
-          "&4电力"));
+          "&4电容"));
 
   public static ItemGroup TOOLS_CATEGORY = new SubItemGroup(
       new NamespacedKey(SupremeExpansion.inst(), "TOOLS"), MULTI_CATEGORY,
