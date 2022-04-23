@@ -10,7 +10,7 @@ public class Leggings {
 
   public static final SlimefunItemStack THORNIUM_LEGGINGS = new SlimefunItemStack(
       "ARMOR_THORNIUM_LEGGINGS",
-      Material.NETHERITE_LEGGINGS, "&f&l钍石护腿", "&f&lA leggings of Thornium");
+      Material.NETHERITE_LEGGINGS, "&f&l钍石护腿", "&f&l由钍制成的护腿");
   public static final ItemStack[] RECIPE_THORNIUM_LEGGINGS = {
       Cetrus.CETRUS_VENTUS, Components.THORNIUM_INGOT, Cetrus.CETRUS_VENTUS,
       Components.THORNIUM_INGOT, null, Components.THORNIUM_INGOT,
