@@ -1,20 +1,25 @@
 options:
+  # 启用自动更新
   auto-update: true
   custom-ticker-delay: 2
+  # 启用矿机
   enable-quarry: true
   enable-quarry-uniquenuggets: true
+  # 启用至高武器
   enable-weapons: true
+  # 启用至高工具
   enable-tools: true
+  # 启用至高防具
   enable-armor: true
 # -------------------------------
-# supreme-enchant
+# supreme-enchant 至高物品附魔设置
 # -------------------------------
-# unbreakable: true = Item does not break
-# unbreakable: false = Item can breakr
+# unbreakable 是否设置为 不可破坏
 # -------------------------------
-# 0 = disable enchantment
-# 1 - 100 = enchantment level
+# 0 = 禁用该附魔
+# 1 - 100 = 附魔等级
 # -------------------------------
+# 附魔列表请自行寻找中英文对照
 #   protection
 #	fire_protection
 #	feather_falling

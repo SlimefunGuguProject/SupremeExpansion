@@ -3,6 +3,7 @@ package com.github.relativobr.supremeexpansion;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import net.guizhanss.guizhanlib.minecraft.helper.inventory.ItemStackHelper;
 import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.ConfigurationSection;
@@ -54,6 +55,7 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
     }
 
     @Override
+    @Nonnull
     public JavaPlugin getJavaPlugin() {
         return this;
     }
@@ -81,7 +83,7 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
 
         if (typeSection == null) {
             log(Level.SEVERE,
-                "Config section \"supreme-enchant\" missing, Check your config and report this!");
+                "配置文件中缺少 \"supreme-enchant\" 相关设置，请尝试重新生成配置文件，或汇报该问题!");
             return;
         }
 
@@ -113,10 +115,10 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
 
             if (itemPath.contains("helmet")) {
                 lore.add(ChatColor.DARK_PURPLE + "夜视 " + amplifier);
-                lore.add(ChatColor.DARK_PURPLE + "潮涌能量 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "潮涌核心 " + amplifier);
                 lore.add(ChatColor.DARK_PURPLE + "水下呼吸 " + amplifier);
             } else if (itemPath.contains("chestplate")) {
-                lore.add(ChatColor.DARK_PURPLE + "伤害吸收 " + amplifier);
+                lore.add(ChatColor.DARK_PURPLE + "抗性提升 " + amplifier);
                 lore.add(ChatColor.DARK_PURPLE + "力量 " + amplifier);
                 lore.add(ChatColor.DARK_PURPLE + "饱和 " + amplifier);
             } else if (itemPath.contains("leggings")) {
@@ -139,7 +141,7 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
                 }
             } else {
                 log(Level.SEVERE,
-                    "Config section for " + itemPath + " missing, Check your config and report this!");
+                    "物品 " + itemPath + " 的设置缺失，请尝试重新生成配置文件，或汇报该问题!");
             }
 
             // add meta
@@ -153,7 +155,7 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
 
         if (typeSection == null) {
             log(Level.SEVERE,
-                "Config section \"supreme-enchant\" missing, Check your config and report this!");
+                "配置文件中缺少 \"supreme-enchant\" 相关设置，请尝试重新生成配置文件，或汇报该问题!");
             return;
         }
 
@@ -187,7 +189,7 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
                 }
             } else {
                 log(Level.SEVERE,
-                    "Config section for " + itemPath + " missing, Check your config and report this!");
+                    "物品 " + itemPath + " 的设置缺失，请尝试重新生成配置文件，或汇报该问题!");
             }
 
             // add meta
@@ -249,17 +251,8 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
             lore = new ArrayList<>();
         }
         for (ItemStack itemStack : output) {
-            if (itemStack.getItemMeta() != null) {
-                String name = itemStack.getType().name();
-                if (itemStack.getItemMeta().hasDisplayName()) {
-                    name = itemStack.getItemMeta().getDisplayName();
-                } else {
-                    name = name.replace("_", " ");
-                    name = name.substring(0, 1).toUpperCase().concat(name.substring(1).toLowerCase());
-                    name = ChatColor.AQUA + name;
-                }
-                lore.add(name + " " + ChatColor.YELLOW + itemStack.getAmount() + "%");
-            }
+            String name = ItemStackHelper.getDisplayName(itemStack);
+            lore.add(ChatColor.AQUA + name + " " + ChatColor.YELLOW + itemStack.getAmount() + "%");
         }
         meta.setLore(lore);
         // add meta
