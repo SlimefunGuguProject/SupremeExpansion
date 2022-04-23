@@ -10,7 +10,7 @@ public class Boots {
 
   public static final SlimefunItemStack THORNIUM_BOOTS = new SlimefunItemStack(
       "ARMOR_THORNIUM_BOOTS",
-      Material.NETHERITE_BOOTS, "&f&l钍石靴", "&f&l由钍做的靴子");
+      Material.NETHERITE_BOOTS, "&f&l钍石靴", "&f&l由钍制成的靴子");
   public static final ItemStack[] RECIPE_THORNIUM_BOOTS = {
       null, null, null,
       Cetrus.CETRUS_IGNIS, null, Cetrus.CETRUS_IGNIS,
