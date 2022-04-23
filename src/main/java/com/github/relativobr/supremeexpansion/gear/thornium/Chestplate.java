@@ -10,7 +10,7 @@ public class Chestplate {
 
   public static final SlimefunItemStack THORNIUM_CHESTPLATE = new SlimefunItemStack(
       "ARMOR_THORNIUM_CHESTPLATE",
-      Material.NETHERITE_CHESTPLATE, "&f&l钍石胸甲", "&f&l由钍做的胸甲");
+      Material.NETHERITE_CHESTPLATE, "&f&l钍石胸甲", "&f&l由钍制成的胸甲");
   public static final ItemStack[] RECIPE_THORNIUM_CHESTPLATE = {
       Components.THORNIUM_INGOT, null, Components.THORNIUM_INGOT,
       Components.THORNIUM_INGOT, Cetrus.CETRUS_LUMIUM, Components.THORNIUM_INGOT,
