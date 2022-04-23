@@ -45,7 +45,7 @@ public class Generator {
 
   public static final SlimefunItemStack BASIC_IGNIS_GENERATOR = new SlimefunItemStack(
       "BASIC_IGNIS_GENERATOR",
-      Material.ORANGE_CONCRETE, "&9Basic Ignis Generator", "&fNeed fire under this block to work",
+      Material.ORANGE_CONCRETE, "&9基础热感应发电机", "&f需在方块下方点火",
       "", "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR),
       Energy.energyBuffer(BASIC_IGNIS_BUFFER), Energy.energyPowerPerSecond(BASIC_IGNIS_ENERGY));
@@ -57,8 +57,8 @@ public class Generator {
   };
 
   public static final SlimefunItemStack IGNIS_GENERATOR = new SlimefunItemStack("IGNIS_GENERATOR",
-      Material.ORANGE_GLAZED_TERRACOTTA, "&9Ignis Generator",
-      "&fNeed fire under this block to work", "", "",
+      Material.ORANGE_GLAZED_TERRACOTTA, "&9至尊热感应发电机",
+      "&f需在方块下方点火", "", "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.GENERATOR),
       Energy.energyBuffer(IGNIS_BUFFER), Energy.energyPowerPerSecond(IGNIS_ENERGY));
 
@@ -70,8 +70,8 @@ public class Generator {
 
   public static final SlimefunItemStack BASIC_VENTUS_GENERATOR = new SlimefunItemStack(
       "BASIC_VENTUS_GENERATOR",
-      Material.LIGHT_BLUE_CONCRETE, "&9Basic Ventus Generator", "&fIt needs to be with its faces",
-      "&fin the wind to work", "",
+      Material.LIGHT_BLUE_CONCRETE, "&9基础风力发电机", "&f需在风中工作",
+      "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR),
       Energy.energyBuffer(BASIC_VENTUS_BUFFER), Energy.energyPowerPerSecond(BASIC_VENTUS_ENERGY));
 
@@ -82,8 +82,8 @@ public class Generator {
   };
 
   public static final SlimefunItemStack VENTUS_GENERATOR = new SlimefunItemStack("VENTUS_GENERATOR",
-      Material.LIGHT_BLUE_GLAZED_TERRACOTTA, "&9Ventus Generator",
-      "&fIt needs to be with its faces", "&fin the wind to work", "",
+      Material.LIGHT_BLUE_GLAZED_TERRACOTTA, "&9至尊风力发电机",
+      "&f需在风中工作", "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR),
       Energy.energyBuffer(VENTUS_BUFFER), Energy.energyPowerPerSecond(VENTUS_ENERGY));
 
@@ -95,7 +95,7 @@ public class Generator {
 
   public static final SlimefunItemStack BASIC_AQUA_GENERATOR = new SlimefunItemStack(
       "BASIC_AQUA_GENERATOR",
-      Material.BLUE_CONCRETE, "&9Basic Aqua Generator", "&fNeed water under this block to work", "",
+      Material.BLUE_CONCRETE, "&9基础水力发电机", "&f需放入水中工作", "",
       "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR),
       Energy.energyBuffer(BASIC_AQUA_BUFFER), Energy.energyPowerPerSecond(BASIC_AQUA_ENERGY));
@@ -110,7 +110,7 @@ public class Generator {
       Components.CARRIAGE_MACHINE, SlimefunItems.STAFF_WATER, Components.CARRIAGE_MACHINE
   };
   public static final SlimefunItemStack AQUA_GENERATOR = new SlimefunItemStack("AQUA_GENERATOR",
-      Material.BLUE_GLAZED_TERRACOTTA, "&9Aqua Generator", "&fNeed water under this block to work",
+      Material.BLUE_GLAZED_TERRACOTTA, "&9至尊水力发电机", "&f需放入水中工作",
       "", "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.GENERATOR),
       Energy.energyBuffer(AQUA_BUFFER), Energy.energyPowerPerSecond(AQUA_ENERGY));
@@ -121,8 +121,8 @@ public class Generator {
   };
   public static final SlimefunItemStack BASIC_LUX_GENERATOR = new SlimefunItemStack(
       "BASIC_LUX_GENERATOR",
-      Material.WHITE_CONCRETE, "&9Basic Lux Generator", "&fNeeds to receive sunlight",
-      "&for moonlight to work", "",
+      Material.WHITE_CONCRETE, "&9基础光能发电机", "&f需在阳光或月光下工作",
+      "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR),
       Energy.energyBuffer(BASIC_LUX_BUFFER), Energy.energyPowerPerSecond(BASIC_LUX_ENERGY));
   public static final ItemStack[] MACHINE_LUX_GENERATOR = new ItemStack[]{
@@ -136,13 +136,13 @@ public class Generator {
       Components.CARRIAGE_MACHINE, SlimefunItems.STAFF_STORM, Components.CARRIAGE_MACHINE
   };
   public static final SlimefunItemStack LUX_GENERATOR = new SlimefunItemStack("LUX_GENERATOR",
-      Material.WHITE_GLAZED_TERRACOTTA, "&9Lux Generator", "&fNeeds to receive sunlight",
-      "&for moonlight to work", "",
+      Material.WHITE_GLAZED_TERRACOTTA, "&9至尊光能发电机", "&f需在阳光或月光下工作",
+      "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.GENERATOR),
       Energy.energyBuffer(LUX_BUFFER), Energy.energyPowerPerSecond(LUX_ENERGY));
   public static final SlimefunItemStack BASIC_LUMIUM_GENERATOR = new SlimefunItemStack(
       "BASIC_LUMIUM_GENERATOR",
-      Material.BROWN_CONCRETE, "&9Basic Lumium Generator", "&fNeeds to be below ground to work", "",
+      Material.BROWN_CONCRETE, "&9基础地壳发电机", "&f需放在地下工作", "",
       "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.GENERATOR),
       Energy.energyBuffer(BASIC_LUMIUM_BUFFER), Energy.energyPowerPerSecond(BASIC_LUMIUM_ENERGY));
@@ -157,13 +157,13 @@ public class Generator {
       Components.PETRIFIER_MACHINE, SlimefunItems.GEO_MINER, Components.PETRIFIER_MACHINE
   };
   public static final SlimefunItemStack LUMIUM_GENERATOR = new SlimefunItemStack("LUMIUM_GENERATOR",
-      Material.BROWN_GLAZED_TERRACOTTA, "&9Lumium Generator", "&fNeeds to be below ground to work",
+      Material.BROWN_GLAZED_TERRACOTTA, "&9至尊地壳发电机", "&f需放在地下工作",
       "", "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.GENERATOR),
       Energy.energyBuffer(LUMIUM_BUFFER), Energy.energyPowerPerSecond(LUMIUM_ENERGY));
   public static final SlimefunItemStack THORNIUM_GENERATOR = new SlimefunItemStack(
       "THORNIUM_GENERATOR",
-      Material.BLACK_GLAZED_TERRACOTTA, "&9Thornium Generator", "&fGenerates energy anywhere", "",
+      Material.BLACK_GLAZED_TERRACOTTA, "&9基础苍穹发电机", "&f可在任何地方工作", "",
       "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
       Energy.energyBuffer(THORNIUM_BUFFER), Energy.energyPowerPerSecond(THORNIUM_ENERGY));
@@ -174,7 +174,7 @@ public class Generator {
   };
   public static final SlimefunItemStack SUPREME_GENERATOR = new SlimefunItemStack(
       "SUPREME_GENERATOR",
-      Material.PURPLE_GLAZED_TERRACOTTA, "&9Supreme Generator", "&fGenerates energy anywhere", "",
+      Material.PURPLE_GLAZED_TERRACOTTA, "&9至尊苍穹发电机", "&f可在任何地方工作", "",
       "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
       Energy.energyBuffer(SUPREME_BUFFER), Energy.energyPowerPerSecond(SUPREME_ENERGY));

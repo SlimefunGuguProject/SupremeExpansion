@@ -12,7 +12,7 @@ public final class Axe {
 
 
   public static final SlimefunItemStack THORNIUM_AXE = new SlimefunItemStack("TOOLS_THORNIUM_AXE",
-      Material.NETHERITE_AXE, "&f&lThornium Axe", "&f&lA Axe of Thornium");
+      Material.NETHERITE_AXE, "&f&l钍石斧", "&f&l由钍制成的斧头");
   public static final ItemStack[] RECIPE_THORNIUM_AXE = {
       Components.THORNIUM_INGOT, Cetrus.CETRUS_VENTUS, null,
       Components.THORNIUM_INGOT, SlimefunItems.STAFF_ELEMENTAL, null,
@@ -21,22 +21,22 @@ public final class Axe {
 
   public static final SlimefunItemStack THORNIUM_AXE_MAGIC = new SlimefunItemStack(
       "TOOLS_THORNIUM_AXE_MAGIC",
-      Material.NETHERITE_AXE, "&a&lMagic Axe", "&f&lA Magic Axe of Thornium");
+      Material.NETHERITE_AXE, "&a&l魔法斧", "&f&l一把蕴含魔法的斧头");
 
   public static final SlimefunItemStack THORNIUM_AXE_RARE = new SlimefunItemStack(
       "TOOLS_THORNIUM_AXE_RARE",
-      Material.NETHERITE_AXE, "&b&lRare Axe", "&f&lA Rare Axe of Thornium");
+      Material.NETHERITE_AXE, "&b&l珍馐斧", "&f&l一把珍奇的斧头");
 
   public static final SlimefunItemStack THORNIUM_AXE_EPIC = new SlimefunItemStack(
       "TOOLS_THORNIUM_AXE_EPIC",
-      Material.NETHERITE_AXE, "&d&lEpic Axe", "&f&lA Epic Axe of Thornium");
+      Material.NETHERITE_AXE, "&d&l精英斧", "&f&l一把精良的斧头");
 
   public static final SlimefunItemStack THORNIUM_AXE_LEGENDARY = new SlimefunItemStack(
       "TOOLS_THORNIUM_AXE_LEGENDARY",
-      Material.NETHERITE_AXE, "&6&lLegendary Axe", "&f&lA Legendary Axe of Thornium");
+      Material.NETHERITE_AXE, "&6&l神话斧", "&f&l它曾在历史书上出现过");
 
   public static final SlimefunItemStack THORNIUM_AXE_SUPREME = new SlimefunItemStack(
       "TOOLS_THORNIUM_AXE_SUPREME",
-      Material.NETHERITE_AXE, "&4&lSupreme Axe", "&f&lA Supreme Axe of Thornium");
+      Material.NETHERITE_AXE, "&4&l至尊斧", "&f&l至尊的终极之斧");
 
 }

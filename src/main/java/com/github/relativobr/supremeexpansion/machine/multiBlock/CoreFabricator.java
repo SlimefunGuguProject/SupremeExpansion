@@ -26,9 +26,9 @@ import org.bukkit.inventory.ItemStack;
 public class CoreFabricator extends MultiBlockMachine implements NotPlaceable {
 
   public static final SlimefunItemStack CORE_FABRICATOR = new SlimefunItemStack("CORE_FABRICATOR",
-      Material.SHROOMLIGHT, "&eCore Fabricator",
-      "", "&7&oYou can craft core here!",
-      "", "&aMultiBlock Machine");
+      Material.SHROOMLIGHT, "&e岩心机",
+      "", "&7&o你可以在此合成至尊核心!",
+      "", "&a多方块结构");
   public static final RecipeType MACHINE_CORE_FABRICATOR = new RecipeType(
       new NamespacedKey(SupremeExpansion.instance,
           "MACHINE_CORE_FABRICATOR_KEY"), CORE_FABRICATOR);

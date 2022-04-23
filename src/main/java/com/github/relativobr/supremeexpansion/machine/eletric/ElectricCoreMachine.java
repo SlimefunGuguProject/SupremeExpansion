@@ -28,8 +28,8 @@ public class ElectricCoreMachine extends MediumContainerMachine {
 
   public static final SlimefunItemStack ELECTRIC_CORE_MACHINE = new SlimefunItemStack(
       "ELECTRIC_CORE_MACHINE",
-      Material.SHROOMLIGHT, "&bElectric Core Machine",
-      "", "&fCraft resource of core",
+      Material.SHROOMLIGHT, "&b电动岩心机 &eI",
+      "", "&f用于合成至尊资源核心",
       "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1),
       Energy.energyPowerPerSecond(20));
 
@@ -42,8 +42,8 @@ public class ElectricCoreMachine extends MediumContainerMachine {
 
   public static final SlimefunItemStack ELECTRIC_CORE_MACHINE_II = new SlimefunItemStack(
       "ELECTRIC_CORE_MACHINE_II",
-      Material.SHROOMLIGHT, "&bElectric Core Machine II",
-      "", "&fAdvanced craft resource of core",
+      Material.SHROOMLIGHT, "&b电动岩心机 &eII",
+      "", "&f用于合成至尊资源核心",
       "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(5),
       Energy.energyPowerPerSecond(100));
 
@@ -55,8 +55,8 @@ public class ElectricCoreMachine extends MediumContainerMachine {
 
   public static final SlimefunItemStack ELECTRIC_CORE_MACHINE_III = new SlimefunItemStack(
       "ELECTRIC_CORE_MACHINE_III",
-      Material.SHROOMLIGHT, "&bElectric Core Machine III",
-      "", "&fAdvanced craft resource of core",
+      Material.SHROOMLIGHT, "&b电动岩心机 &eIII",
+      "", "&f用于合成至尊资源核心",
       "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(15),
       Energy.energyPowerPerSecond(300));
 

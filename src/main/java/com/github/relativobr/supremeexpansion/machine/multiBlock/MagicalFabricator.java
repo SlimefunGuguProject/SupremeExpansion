@@ -27,9 +27,9 @@ public class MagicalFabricator extends MultiBlockMachine implements NotPlaceable
 
   public static final SlimefunItemStack MAGICAL_FABRICATOR = new SlimefunItemStack(
       "MACHINE_MAGICAL_FABRICATOR",
-      Material.CRYING_OBSIDIAN, "&eMagical Fabricator",
-      "", "&7&oYou can craft magical here!",
-      "", "&aMultiBlock Machine");
+      Material.CRYING_OBSIDIAN, "&e至尊魔法台",
+      "", "&7&o你可以在此合成魔法!",
+      "", "&a多方块结构");
   public static final RecipeType MACHINE_MAGICAL_FABRICATOR = new RecipeType(
       new NamespacedKey(SupremeExpansion.instance,
           "MACHINE_MAGICAL_FABRICATOR_KEY"), MAGICAL_FABRICATOR);

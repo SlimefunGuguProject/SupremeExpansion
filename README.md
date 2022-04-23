@@ -2,13 +2,29 @@
 Supreme Expansion is a addon to Slimefun 4 which brings various new resources to craft powerful contains items, gear and machines
 
 
-# Minecraft Version
-1.18.1
+## Requirements
+
+Minecraft Version: 1.17+ 
+
+Slimefun Version: RC-31
 
 
-[//]: # (### [Download]&#40;https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/&#41;)
-[//]: # ([![Build Status]&#40;https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/badge.svg&#41;]&#40;https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master&#41;)
+### [Download](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/)
+[![Build Status](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/badge.svg)](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master)
 
+
+## Bugs/Suggestions
+
+Make a new issue, pull request, or contact me on discord @RelativoBR#9577
+
+<p>
+  <a href="https://discord.gg/slimefun">
+    <img src="https://discordapp.com/api/guilds/565557184348422174/widget.png?style=banner3" alt="Discord Invite"/>
+  </a>
+  <a href="https://discord.gg/SqD3gg5SAU">
+    <img src="https://discordapp.com/api/guilds/809178621424041997/widget.png?style=banner3" alt="Discord Invite"/>
+  </a>
+</p>
 
 ## Machines
 - **Core Fabricator** - MultiBlock Machine - You can craft core here
