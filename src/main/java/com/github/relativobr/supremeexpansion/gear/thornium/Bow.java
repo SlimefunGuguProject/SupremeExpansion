@@ -12,7 +12,7 @@ public final class Bow {
 
 
   public static final SlimefunItemStack THORNIUM_BOW = new SlimefunItemStack("WEAPONS_THORNIUM_BOW",
-      Material.BOW, "&f&l钍石弓", "&f&l由钍的弓");
+      Material.BOW, "&f&l钍石弓", "&f&l由钍制成的弓");
   public static final ItemStack[] RECIPE_THORNIUM_BOW = {
       null, Components.THORNIUM_INGOT, CoreDeath.RESOURCE_CORE_STRING,
       Cetrus.CETRUS_LUMIUM, null, CoreDeath.RESOURCE_CORE_STRING,
