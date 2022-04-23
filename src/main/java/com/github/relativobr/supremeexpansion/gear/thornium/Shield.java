@@ -12,7 +12,7 @@ public final class Shield {
 
   public static final SlimefunItemStack THORNIUM_SHIELD = new SlimefunItemStack(
       "WEAPONS_THORNIUM_SHIELD",
-      Material.SHIELD, "&f&l钍石盾", "&f&l由钍做的盾");
+      Material.SHIELD, "&f&l钍石盾", "&f&l由钍制成的盾");
   public static final ItemStack[] RECIPE_THORNIUM_SHIELD = {
       CoreNature.RESOURCE_CORE_OAK_LOG, Components.THORNIUM_INGOT, CoreNature.RESOURCE_CORE_OAK_LOG,
       CoreNature.RESOURCE_CORE_OAK_LOG, Cetrus.CETRUS_LUX, CoreNature.RESOURCE_CORE_OAK_LOG,
