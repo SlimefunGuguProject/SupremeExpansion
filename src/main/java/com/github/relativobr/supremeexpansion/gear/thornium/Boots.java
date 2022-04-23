@@ -31,7 +31,7 @@ public class Boots {
 
   public static final SlimefunItemStack THORNIUM_BOOTS_LEGENDARY = new SlimefunItemStack(
       "ARMOR_THORNIUM_BOOTS_LEGENDARY",
-      Material.NETHERITE_BOOTS, "&6&l神话斧", "&f&l他曾在历史书上出现过");
+      Material.NETHERITE_BOOTS, "&6&l神话斧", "&f&l它曾在历史书上出现过");
 
   public static final SlimefunItemStack THORNIUM_BOOTS_SUPREME = new SlimefunItemStack(
       "ARMOR_THORNIUM_BOOTS_SUPREME",
