@@ -17,7 +17,7 @@ public class Energy {
 
   @Nonnull
   public static String energyCapacity(Integer energy) {
-    return "&8⇨ &e⚡ &7" + ((energy == null) ? "1600000000" : format((double) energy)) + " J 可储存;
+    return "&8⇨ &e⚡ &7" + ((energy == null) ? "1600000000" : format((double) energy)) + " J 可储存";
   }
 
   @Nonnull
