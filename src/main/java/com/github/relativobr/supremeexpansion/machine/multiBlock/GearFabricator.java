@@ -30,9 +30,9 @@ public class GearFabricator extends MultiBlockMachine implements NotPlaceable {
 
   public static final SlimefunItemStack GEAR_FABRICATOR = new SlimefunItemStack(
       "MACHINE_GEAR_FABRICATOR",
-      Material.SMITHING_TABLE, "&eGear Fabricator",
-      "", "&7&oYou can craft weapons, armor and tools here!",
-      "", "&aMultiBlock Machine");
+      Material.SMITHING_TABLE, "&e至尊工具台",
+      "", "&7&o你可以在此合成武器、盔甲、工具等!",
+      "", "&a多方块结构");
   public static final RecipeType MACHINE_GEAR_FABRICATOR = new RecipeType(
       new NamespacedKey(SupremeExpansion.instance,
           "MACHINE_GEAR_FABRICATOR_KEY"), GEAR_FABRICATOR);
