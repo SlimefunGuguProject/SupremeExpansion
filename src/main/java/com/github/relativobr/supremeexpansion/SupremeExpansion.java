@@ -35,7 +35,7 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
 
     if (cfg.getBoolean("options.auto-update") && getDescription().getVersion()
         .startsWith("DEV - ")) {
-      new GitHubBuildsUpdater(this, getFile(), "RelativoBR/SupremeExpansion/master").start();
+      new GitHubBuildsUpdater(this, getFile(), "RelativoBR/SupremeExpansion/main").start();
     }
 
     instance = this;

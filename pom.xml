@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.relativobr</groupId>
     <artifactId>SupremeExpansion</artifactId>
-    <version>2.5.0</version>
+    <version>2.6.0</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <author>RelativoBR</author>
+        <author>RelativoBR e WilianSantosBR</author>
     </properties>
 
     <repositories>
@@ -57,13 +57,20 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
+            <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.3.18</version>
+            <version>5.3.19</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.RelativoBR</groupId>
+            <artifactId>SlimefunRelativeLib</artifactId>
+            <version>v1.0.2</version>
         </dependency>
 
     </dependencies>
