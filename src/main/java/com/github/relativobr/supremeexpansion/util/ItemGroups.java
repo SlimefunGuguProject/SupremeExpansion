@@ -1,5 +1,6 @@
-package com.github.relativobr.supremeexpansion;
+package com.github.relativobr.supremeexpansion.util;
 
+import com.github.relativobr.supremeexpansion.SupremeExpansion;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
@@ -8,7 +9,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 
-public class Categories {
+public class ItemGroups {
 
   public static NestedItemGroup MULTI_CATEGORY = new NestedItemGroup(
       new NamespacedKey(SupremeExpansion.inst(), "MAIN"),

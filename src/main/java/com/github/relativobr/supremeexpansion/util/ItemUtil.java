@@ -1,5 +1,6 @@
 package com.github.relativobr.supremeexpansion.util;
 
+import com.github.relativobr.supremeexpansion.machine.AbstractQuarry;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,8 @@ import org.bukkit.potion.PotionEffectType;
 
 public class ItemUtil {
 
-  public static SlimefunItemStack addLoreQuarry(@Nonnull SlimefunItemStack item, ItemStack[] output) {
+  public static void addLoreQuarry(@Nonnull AbstractQuarry quarry) {
+    ItemStack item = quarry.getItem();
     ItemMeta meta = item.getItemMeta();
     // lore
     List<String> lore;
@@ -21,6 +23,7 @@ public class ItemUtil {
     } else {
       lore = new ArrayList<>();
     }
+    final ItemStack[] output = quarry.getOutput();
     for (ItemStack itemStack : output) {
       if (itemStack.getItemMeta() != null) {
         String name = itemStack.getType().name();
@@ -37,8 +40,6 @@ public class ItemUtil {
     meta.setLore(lore);
     // add meta
     item.setItemMeta(meta);
-
-    return item;
   }
 
 

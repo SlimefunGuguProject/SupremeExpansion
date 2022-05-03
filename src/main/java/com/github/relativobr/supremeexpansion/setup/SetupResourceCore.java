@@ -1,6 +1,6 @@
 package com.github.relativobr.supremeexpansion.setup;
 
-import com.github.relativobr.supremeexpansion.Categories;
+import com.github.relativobr.supremeexpansion.util.ItemGroups;
 import com.github.relativobr.supremeexpansion.SupremeExpansion;
 import com.github.relativobr.supremeexpansion.core.SupremeCoreAlloy;
 import com.github.relativobr.supremeexpansion.core.SupremeCoreBlock;
@@ -11,283 +11,282 @@ import com.github.relativobr.supremeexpansion.core.SupremeCoreNature;
 import com.github.relativobr.supremeexpansion.machine.MultiBlockCoreFabricator;
 import com.github.relativobr.recipe.CustomCoreRecipe;
 import com.github.relativobr.util.ItemNotPlaceable;
-import javax.annotation.Nonnull;
 
 public class SetupResourceCore {
 
 
-  public static void setup(@Nonnull SupremeExpansion plugin) {
+  public static void setup(SupremeExpansion sup) {
 
-    ItemNotPlaceable itemResourceCoreStone = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreStone = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_STONE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_STONE));
-    itemResourceCoreStone.register(plugin);
+    itemResourceCoreStone.register(sup);
 
-    ItemNotPlaceable itemResourceCoreGranite = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreGranite = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_GRANITE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_GRANITE));
-    itemResourceCoreGranite.register(plugin);
+    itemResourceCoreGranite.register(sup);
 
-    ItemNotPlaceable itemResourceCoreDiorite = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreDiorite = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_DIORITE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_DIORITE));
-    itemResourceCoreDiorite.register(plugin);
+    itemResourceCoreDiorite.register(sup);
 
-    ItemNotPlaceable itemResourceCoreAndesite = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreAndesite = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_ANDESITE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_ANDESITE));
-    itemResourceCoreAndesite.register(plugin);
+    itemResourceCoreAndesite.register(sup);
 
-    ItemNotPlaceable itemResourceCoreGravel = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreGravel = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_GRAVEL, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_GRAVEL));
-    itemResourceCoreGravel.register(plugin);
+    itemResourceCoreGravel.register(sup);
 
-    ItemNotPlaceable itemResourceCoreSand = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreSand = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_SAND, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_SAND));
-    itemResourceCoreSand.register(plugin);
+    itemResourceCoreSand.register(sup);
 
-    ItemNotPlaceable itemResourceCoreEndstone = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreEndstone = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_ENDSTONE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_ENDSTONE));
-    itemResourceCoreEndstone.register(plugin);
+    itemResourceCoreEndstone.register(sup);
 
-    ItemNotPlaceable itemResourceCoreClay = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreClay = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_CLAY, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_CLAY));
-    itemResourceCoreClay.register(plugin);
+    itemResourceCoreClay.register(sup);
 
-    ItemNotPlaceable itemResourceCoreSnow = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreSnow = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreBlock.RESOURCE_CORE_SNOW, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreBlock.RECIPE_RESOURCE_CORE_SNOW));
-    itemResourceCoreSnow.register(plugin);
+    itemResourceCoreSnow.register(sup);
 
-    ItemNotPlaceable itemResourceCorePorkchop = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCorePorkchop = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_PORKCHOP, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_PORKCHOP));
-    itemResourceCorePorkchop.register(plugin);
+    itemResourceCorePorkchop.register(sup);
 
-    ItemNotPlaceable itemResourceCoreBeef = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreBeef = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_BEEF, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_BEEF));
-    itemResourceCoreBeef.register(plugin);
+    itemResourceCoreBeef.register(sup);
 
-    ItemNotPlaceable itemResourceCoreMutton = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreMutton = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_MUTTON, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_MUTTON));
-    itemResourceCoreMutton.register(plugin);
+    itemResourceCoreMutton.register(sup);
 
-    ItemNotPlaceable itemResourceCoreRawChicken = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreRawChicken = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_CHICKEN, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_CHICKEN));
-    itemResourceCoreRawChicken.register(plugin);
+    itemResourceCoreRawChicken.register(sup);
 
-    ItemNotPlaceable itemResourceCoreSalmon = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreSalmon = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_SALMON, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_SALMON));
-    itemResourceCoreSalmon.register(plugin);
+    itemResourceCoreSalmon.register(sup);
 
-    ItemNotPlaceable itemResourceCoreCod = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreCod = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_COD, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_COD));
-    itemResourceCoreCod.register(plugin);
+    itemResourceCoreCod.register(sup);
 
-    ItemNotPlaceable itemResourceCoreLead = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreLead = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_STRING, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_STRING));
-    itemResourceCoreLead.register(plugin);
+    itemResourceCoreLead.register(sup);
 
-    ItemNotPlaceable itemResourceCoreSpiderEye = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreSpiderEye = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_SPIDER_EYE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_SPIDER_EYE));
-    itemResourceCoreSpiderEye.register(plugin);
+    itemResourceCoreSpiderEye.register(sup);
 
-    ItemNotPlaceable itemResourceCoreGhastTear = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreGhastTear = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreDeath.RESOURCE_CORE_TEAR, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreDeath.RECIPE_RESOURCE_CORE_TEAR));
-    itemResourceCoreGhastTear.register(plugin);
+    itemResourceCoreGhastTear.register(sup);
 
-    ItemNotPlaceable itemResourceCorePotato = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCorePotato = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreLife.RESOURCE_CORE_POTATO, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_POTATO));
-    itemResourceCorePotato.register(plugin);
+    itemResourceCorePotato.register(sup);
 
-    ItemNotPlaceable itemResourceCoreApple = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreApple = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreLife.RESOURCE_CORE_APPLE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_APPLE));
-    itemResourceCoreApple.register(plugin);
+    itemResourceCoreApple.register(sup);
 
-    ItemNotPlaceable itemResourceCoreBeetroot = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreBeetroot = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreLife.RESOURCE_CORE_BEETROOT, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_BEETROOT));
-    itemResourceCoreBeetroot.register(plugin);
+    itemResourceCoreBeetroot.register(sup);
 
-    ItemNotPlaceable itemResourceCoreWheat = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreWheat = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreLife.RESOURCE_CORE_WHEAT, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_WHEAT));
-    itemResourceCoreWheat.register(plugin);
+    itemResourceCoreWheat.register(sup);
 
-    ItemNotPlaceable itemResourceCoreSugarCane = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreSugarCane = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreLife.RESOURCE_CORE_SUGAR_CANE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_SUGAR_CANE));
-    itemResourceCoreSugarCane.register(plugin);
+    itemResourceCoreSugarCane.register(sup);
 
     ItemNotPlaceable itemResourceCoreSweetBerries = new ItemNotPlaceable(
-        Categories.RESOURCE_CATEGORY, SupremeCoreLife.RESOURCE_CORE_SWEET_BERRIES,
+        ItemGroups.RESOURCE_CATEGORY, SupremeCoreLife.RESOURCE_CORE_SWEET_BERRIES,
         MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_SWEET_BERRIES));
-    itemResourceCoreSweetBerries.register(plugin);
+    itemResourceCoreSweetBerries.register(sup);
 
-    ItemNotPlaceable itemResourceCoreMelon = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreMelon = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreLife.RESOURCE_CORE_MELON, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_MELON));
-    itemResourceCoreMelon.register(plugin);
+    itemResourceCoreMelon.register(sup);
 
-    ItemNotPlaceable itemResourceCoreCarrot = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreCarrot = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreLife.RESOURCE_CORE_CARROT, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_CARROT));
-    itemResourceCoreCarrot.register(plugin);
+    itemResourceCoreCarrot.register(sup);
 
-    ItemNotPlaceable itemResourceCorePumpkin = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCorePumpkin = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreLife.RESOURCE_CORE_PUMPKIN, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreLife.RECIPE_RESOURCE_CORE_PUMPKIN));
-    itemResourceCorePumpkin.register(plugin);
+    itemResourceCorePumpkin.register(sup);
 
-    ItemNotPlaceable itemResourceCoreRed = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreRed = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_RED, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_RED));
-    itemResourceCoreRed.register(plugin);
+    itemResourceCoreRed.register(sup);
 
-    ItemNotPlaceable itemResourceCoreYellow = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreYellow = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_YELLOW, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_YELLOW));
-    itemResourceCoreYellow.register(plugin);
+    itemResourceCoreYellow.register(sup);
 
-    ItemNotPlaceable itemResourceCorePurple = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCorePurple = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_PURPLE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_PURPLE));
-    itemResourceCorePurple.register(plugin);
+    itemResourceCorePurple.register(sup);
 
-    ItemNotPlaceable itemResourceCoreBlue = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreBlue = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_BLUE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_BLUE));
-    itemResourceCoreBlue.register(plugin);
+    itemResourceCoreBlue.register(sup);
 
-    ItemNotPlaceable itemResourceCoreBlack = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreBlack = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_BLACK, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_BLACK));
-    itemResourceCoreBlack.register(plugin);
+    itemResourceCoreBlack.register(sup);
 
-    ItemNotPlaceable itemResourceCoreGreen = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreGreen = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_GREEN, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_GREEN));
-    itemResourceCoreGreen.register(plugin);
+    itemResourceCoreGreen.register(sup);
 
-    ItemNotPlaceable itemResourceCorePink = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCorePink = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_PINK, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_PINK));
-    itemResourceCorePink.register(plugin);
+    itemResourceCorePink.register(sup);
 
-    ItemNotPlaceable itemResourceCoreGray = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreGray = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_GRAY, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_GRAY));
-    itemResourceCoreGray.register(plugin);
+    itemResourceCoreGray.register(sup);
 
-    ItemNotPlaceable itemResourceCoreCyan = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreCyan = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreColor.RESOURCE_CORE_CYAN, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreColor.RECIPE_RESOURCE_CORE_CYAN));
-    itemResourceCoreCyan.register(plugin);
+    itemResourceCoreCyan.register(sup);
 
-    ItemNotPlaceable itemResourceCoreOakLog = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreOakLog = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_OAK_LOG, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_OAK_LOG));
-    itemResourceCoreOakLog.register(plugin);
+    itemResourceCoreOakLog.register(sup);
 
-    ItemNotPlaceable itemResourceCoreSpruceLog = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreSpruceLog = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_SPRUCE_LOG, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_SPRUCE_LOG));
-    itemResourceCoreSpruceLog.register(plugin);
+    itemResourceCoreSpruceLog.register(sup);
 
-    ItemNotPlaceable itemResourceCoreBirchLog = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreBirchLog = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_BIRCH_LOG, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_BIRCH_LOG));
-    itemResourceCoreBirchLog.register(plugin);
+    itemResourceCoreBirchLog.register(sup);
 
-    ItemNotPlaceable itemResourceCoreJungleLog = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreJungleLog = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_JUNGLE_LOG, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_JUNGLE_LOG));
-    itemResourceCoreJungleLog.register(plugin);
+    itemResourceCoreJungleLog.register(sup);
 
-    ItemNotPlaceable itemResourceCoreAcaciaLog = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreAcaciaLog = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_ACACIA_LOG, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_ACACIA_LOG));
-    itemResourceCoreAcaciaLog.register(plugin);
+    itemResourceCoreAcaciaLog.register(sup);
 
-    ItemNotPlaceable itemResourceCoreDarkLog = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreDarkLog = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_DARK_OAK_LOG, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_DARK_OAK_LOG));
-    itemResourceCoreDarkLog.register(plugin);
+    itemResourceCoreDarkLog.register(sup);
 
-    ItemNotPlaceable itemResourceCoreCrimsonLog = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreCrimsonLog = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_CRIMSON_STEM, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_CRIMSON_STEM));
-    itemResourceCoreCrimsonLog.register(plugin);
+    itemResourceCoreCrimsonLog.register(sup);
 
-    ItemNotPlaceable itemResourceCoreWarpedLog = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreWarpedLog = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_WARPED_STEM, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_WARPED_STEM));
-    itemResourceCoreWarpedLog.register(plugin);
+    itemResourceCoreWarpedLog.register(sup);
 
-    ItemNotPlaceable itemResourceCoreWitherRose = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreWitherRose = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreNature.RESOURCE_CORE_WITHER_ROSE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreNature.RECIPE_RESOURCE_CORE_WITHER_ROSE));
-    itemResourceCoreWitherRose.register(plugin);
+    itemResourceCoreWitherRose.register(sup);
 
-    ItemNotPlaceable itemResourceCoreCoal = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreCoal = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_COAL, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_COAL));
-    itemResourceCoreCoal.register(plugin);
+    itemResourceCoreCoal.register(sup);
 
-    ItemNotPlaceable itemResourceCoreIron = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreIron = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_IRON, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_IRON));
-    itemResourceCoreIron.register(plugin);
+    itemResourceCoreIron.register(sup);
 
-    ItemNotPlaceable itemResourceCoreGold = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreGold = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_GOLD, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_GOLD));
-    itemResourceCoreGold.register(plugin);
+    itemResourceCoreGold.register(sup);
 
-    ItemNotPlaceable itemResourceCoreRedstone = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreRedstone = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_REDSTONE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_REDSTONE));
-    itemResourceCoreRedstone.register(plugin);
+    itemResourceCoreRedstone.register(sup);
 
-    ItemNotPlaceable itemResourceCoreLapis = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreLapis = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_LAPIS, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_LAPIS));
-    itemResourceCoreLapis.register(plugin);
+    itemResourceCoreLapis.register(sup);
 
-    ItemNotPlaceable itemResourceCoreDiamond = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreDiamond = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_DIAMOND, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_DIAMOND));
-    itemResourceCoreDiamond.register(plugin);
+    itemResourceCoreDiamond.register(sup);
 
-    ItemNotPlaceable itemResourceCoreEmerald = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreEmerald = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_EMERALD, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_EMERALD));
-    itemResourceCoreEmerald.register(plugin);
+    itemResourceCoreEmerald.register(sup);
 
-    ItemNotPlaceable itemResourceCoreQuartz = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreQuartz = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_QUARTZ, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_QUARTZ));
-    itemResourceCoreQuartz.register(plugin);
+    itemResourceCoreQuartz.register(sup);
 
-    ItemNotPlaceable itemResourceCoreNetherite = new ItemNotPlaceable(Categories.RESOURCE_CATEGORY,
+    ItemNotPlaceable itemResourceCoreNetherite = new ItemNotPlaceable(ItemGroups.RESOURCE_CATEGORY,
         SupremeCoreAlloy.RESOURCE_CORE_NETHERITE, MultiBlockCoreFabricator.getMachine(),
         CustomCoreRecipe.getRecipe(SupremeCoreAlloy.RECIPE_RESOURCE_CORE_NETHERITE));
-    itemResourceCoreNetherite.register(plugin);
+    itemResourceCoreNetherite.register(sup);
 
 
   }

@@ -20,7 +20,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
 
-  public static SupremeExpansion instance = null;
+  private static SupremeExpansion instance;
 
   public static SupremeExpansion inst() {
     return instance;
@@ -29,20 +29,25 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
   @Override
   public void onEnable() {
 
-    Config cfg = new Config(this);
+    instance = this;
 
+    SupremeExpansion.inst().log(Level.INFO, "########################################");
+    SupremeExpansion.inst().log(Level.INFO, "            SupremeExpansion            ");
+    SupremeExpansion.inst().log(Level.INFO, "########################################");
+
+    Config cfg = new Config(this);
     if (cfg.getBoolean("options.auto-update") && getDescription().getVersion()
         .startsWith("DEV - ")) {
       new GitHubBuildsUpdater(this, getFile(), "RelativoBR/SupremeExpansion/main").start();
     }
 
-    instance = this;
-
-    // build supreme expansion
-    SupremeExpansion.inst().log(Level.INFO, "### START SETUP SUPREME ###");
     MainSetup.setup(this);
-    SupremeExpansion.inst().log(Level.INFO, "### END SETUP SUPREME ###");
 
+  }
+
+  @Override
+  public void onDisable() {
+    instance = null;
   }
 
   @Override

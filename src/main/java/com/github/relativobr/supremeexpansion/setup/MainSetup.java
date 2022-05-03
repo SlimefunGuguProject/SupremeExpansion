@@ -4,42 +4,34 @@ import com.github.relativobr.supremeexpansion.SupremeExpansion;
 import com.github.relativobr.supremeexpansion.gear.AbstractArmor;
 import com.github.relativobr.supremeexpansion.gear.AbstractTools;
 import com.github.relativobr.supremeexpansion.gear.AbstractWeapons;
-import javax.annotation.Nonnull;
-
 
 public class MainSetup {
 
+  public static void setup(SupremeExpansion sup) {
 
-  public static void setup(@Nonnull SupremeExpansion plugin) {
+    SetupBasicMachine.setup(sup);
+    SetupResourceCore.setup(sup);
+    SetupSupremeCore.setup(sup);
+    SetupMagical.setup(sup);
+    SetupSupremeComponents.setup(sup);
+    SetupElectricMachine.setup(sup);
+    SetupGenerators.setup(sup);
 
-    // setup Machine
-    SetupBasicMachine.setup(plugin);
-    SetupSupremeQuarry.setup(plugin);
-    SetupElectricMachine.setup(plugin);
-
-    // setup Resource
-    SetupResourceCore.setup(plugin);
-    SetupSupremeComponents.setup(plugin);
-    SetupMagical.setup(plugin);
-
-    // setup Core
-    SetupSupremeCore.setup(plugin);
-
-    if (plugin.getConfig().getBoolean("options.enable-weapons")) {
-      AbstractWeapons.setup(plugin);
+    if (sup.getConfig().getBoolean("options.enable-weapons")) {
+      AbstractWeapons.setup(sup);
     }
 
-    if (SupremeExpansion.inst().getConfig().getBoolean("options.enable-tools")) {
-      AbstractTools.setup(plugin);
+    if (sup.getConfig().getBoolean("options.enable-tools")) {
+      AbstractTools.setup(sup);
     }
 
-    if (SupremeExpansion.inst().getConfig().getBoolean("options.enable-armor")) {
-      AbstractArmor.setup(plugin);
+    if (sup.getConfig().getBoolean("options.enable-armor")) {
+      AbstractArmor.setup(sup);
     }
 
-    // setup Energy
-    SetupGenerators.setup(plugin);
+    if (sup.getConfig().getBoolean("options.enable-quarry")) {
+      SetupSupremeQuarry.setup(sup);
+    }
 
   }
-
 }
