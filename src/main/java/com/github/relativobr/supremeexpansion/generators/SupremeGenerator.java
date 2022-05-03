@@ -51,7 +51,7 @@ public class SupremeGenerator {
       UtilEnergy.energyBuffer(BASIC_IGNIS_BUFFER), UtilEnergy.energyPowerPerSecond(BASIC_IGNIS_ENERGY));
 
   public static final ItemStack[] MACHINE_BASIC_IGNIS_GENERATOR = new ItemStack[]{
-      SupremeComponents.ALLOY_AURUM, SupremeCoreAlloy.RESOURCE_CORE_COAL, SupremeComponents.ALLOY_AURUM,
+      SupremeComponents.ALLOY_AURUM, SupremeCoreAlloy.RESOURCE_CORE_REDSTONE, SupremeComponents.ALLOY_AURUM,
       SupremeComponents.INDUCTIVE_MACHINE, SlimefunItems.COAL_GENERATOR_2, SupremeComponents.INDUCTIVE_MACHINE,
       SupremeComponents.CARRIAGE_MACHINE, SlimefunItems.STAFF_FIRE, SupremeComponents.CARRIAGE_MACHINE
   };
