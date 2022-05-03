@@ -25,6 +25,30 @@ Make a new issue, pull request, or contact me on discord @WilianSantos#7381 or @
   </a>
 </p>
 
+
+
+[![](https://jitpack.io/v/RelativoBR/SupremeExpansion.svg)](https://jitpack.io/#RelativoBR/SupremeExpansion)
+
+
+# Add dependency in your addon
+
+```
+<repositories>
+    [...]
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.github.RelativoBR</groupId>
+    <artifactId>SupremeExpansion</artifactId>
+    <version>RELEASE</version>
+</dependency>
+```
+
+
 ## Machines
 - **Core Fabricator** - MultiBlock Machine - You can craft core here
 - **Gear Fabricator** - MultiBlock Machine - You can craft weapons, armor and tools here
