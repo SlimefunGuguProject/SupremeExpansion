@@ -13,7 +13,7 @@ public class SupremeComponents {
 
   public static final SlimefunItemStack SUPREME_NUGGET = new SlimefunItemStack("SUPREME_NUGGET",
       "cffc977cc7e10e564a09638a53bbc4c54c9c8dac7450ba3dfa3c9099d94f5", "&aNugget Supreme", "",
-      "&7The Supreme");
+      "&7From the Nugget Supreme");
   public static final ItemStack[] RECIPE_SUPREME_NUGGET = {
       null, null, null,
       null, SupremeQuarry.UNIQUENUGGETS_QUARRY, null,
@@ -22,7 +22,7 @@ public class SupremeComponents {
 
   public static final SlimefunItemStack SUPREME = new SlimefunItemStack("SUPREME",
       "c69e3e6e5b2b92f0beb368b738b993d7ba225bf9bb2758bfc9fc2daba4a5a7d", "&aSupreme", "",
-      "&7From the Nugget Supreme");
+      "&7The Supreme");
   public static final ItemStack[] RECIPE_SUPREME = {
       new ItemStack(SUPREME_NUGGET), new ItemStack(SUPREME_NUGGET), new ItemStack(SUPREME_NUGGET),
       new ItemStack(SUPREME_NUGGET), new ItemStack(SUPREME_NUGGET), new ItemStack(SUPREME_NUGGET),
@@ -359,12 +359,9 @@ public class SupremeComponents {
       "RESOURCE_CRYSTALLIZER_MACHINE",
       Material.TUBE_CORAL_BLOCK, "&aCrystallizer Machine", "", "&cAdvanced Machine Component");
   public static final ItemStack[] RECIPE_CRYSTALLIZER_MACHINE = {
-      new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_DIAMOND), new ItemStack(STAINLESS_MACHINE),
-      new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_DIAMOND),
-      new ItemStack(ADAMANTIUM_PLATE), new ItemStack(PETRIFIER_MACHINE),
-      new ItemStack(ADAMANTIUM_PLATE),
-      new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_EMERALD), new ItemStack(INDUCTOR_MACHINE),
-      new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_EMERALD)
+      new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_DIAMOND), new ItemStack(STAINLESS_MACHINE), new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_DIAMOND),
+      new ItemStack(SupremeComponents.SYNTHETIC_RUBY), new ItemStack(PETRIFIER_MACHINE), new ItemStack(SupremeComponents.SYNTHETIC_RUBY),
+      new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_EMERALD), new ItemStack(INDUCTOR_MACHINE), new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_EMERALD)
   };
 
   public static final SlimefunItemStack BLEND_MACHINE = new SlimefunItemStack(
@@ -377,6 +374,22 @@ public class SupremeComponents {
       new ItemStack(CRYSTALLIZER_MACHINE),
       new ItemStack(CONVEYANCE_MACHINE), new ItemStack(SupremeCoreAlloy.RESOURCE_CORE_NETHERITE),
       new ItemStack(CONVEYANCE_MACHINE)
+  };
+
+  public static final SlimefunItemStack SYNTHETIC_AMETHYST = new SlimefunItemStack("RESOURCE_SYNTHETIC_AMETHYST",
+      Material.PURPLE_DYE, "&4Synthetic Amethyst", "");
+  public static final ItemStack[] RECIPE_SYNTHETIC_AMETHYST = {
+      SlimefunItems.SYNTHETIC_SAPPHIRE, SlimefunItems.MAGIC_LUMP_3, SlimefunItems.SYNTHETIC_SAPPHIRE,
+      SlimefunItems.MAGIC_LUMP_3, new ItemStack(Material.AMETHYST_SHARD), SlimefunItems.MAGIC_LUMP_3,
+      SlimefunItems.SYNTHETIC_SAPPHIRE, SlimefunItems.MAGIC_LUMP_3, SlimefunItems.SYNTHETIC_SAPPHIRE
+  };
+
+  public static final SlimefunItemStack SYNTHETIC_RUBY = new SlimefunItemStack("RESOURCE_SYNTHETIC_RUBY",
+      Material.PINK_DYE, "&4Synthetic Ruby", "");
+  public static final ItemStack[] RECIPE_SYNTHETIC_RUBY = {
+      SlimefunItems.SYNTHETIC_EMERALD, SlimefunItems.SYNTHETIC_DIAMOND, SlimefunItems.SYNTHETIC_EMERALD,
+      SlimefunItems.SYNTHETIC_DIAMOND, SupremeComponents.SYNTHETIC_AMETHYST, SlimefunItems.SYNTHETIC_DIAMOND,
+      SlimefunItems.SYNTHETIC_EMERALD, SlimefunItems.SYNTHETIC_DIAMOND, SlimefunItems.SYNTHETIC_EMERALD
   };
 
 }

@@ -50,6 +50,9 @@ public class SetupSupremeComponents {
     registerMultiblock(plugin, SupremeComponents.SUPREME_NUGGET, SupremeComponents.RECIPE_SUPREME_NUGGET);
     registerMagicalFabricator(plugin, SupremeComponents.SUPREME, SupremeComponents.RECIPE_SUPREME);
 
+    registerEnhancedCraft(plugin, SupremeComponents.SYNTHETIC_AMETHYST, SupremeComponents.RECIPE_SYNTHETIC_AMETHYST);
+    registerEnhancedCraft(plugin, SupremeComponents.SYNTHETIC_RUBY, SupremeComponents.RECIPE_SYNTHETIC_RUBY);
+
     registerEnhancedCraft(plugin, SupremeComponents.INDUCTIVE_MACHINE,
         SupremeComponents.RECIPE_INDUCTIVE_MACHINE);
     registerEnhancedCraft(plugin, SupremeComponents.INDUCTOR_MACHINE, SupremeComponents.RECIPE_INDUCTOR_MACHINE);

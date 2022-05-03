@@ -34,11 +34,9 @@ public class ElectricCoreMachine extends MediumContainerMachine {
       UtilEnergy.energyPowerPerSecond(20));
 
   public static final ItemStack[] RECIPE_ELECTRIC_CORE_MACHINE = new ItemStack[]{
-      SupremeComponents.STAINLESS_MACHINE, SlimefunItems.PROGRAMMABLE_ANDROID_3,
-      SupremeComponents.STAINLESS_MACHINE,
-      SupremeComponents.INDUCTOR_MACHINE, SupremeComponents.CRYSTALLIZER_MACHINE, SupremeComponents.INDUCTOR_MACHINE,
-      SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.CARBONADO_EDGED_CAPACITOR,
-      SlimefunItems.ELECTRIC_MOTOR};
+      SupremeComponents.RUSTLESS_MACHINE, SlimefunItems.PROGRAMMABLE_ANDROID_3, SupremeComponents.RUSTLESS_MACHINE,
+      SupremeComponents.INDUCTIVE_MACHINE, SupremeComponents.SYNTHETIC_RUBY, SupremeComponents.INDUCTIVE_MACHINE,
+      SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.CARBONADO_EDGED_CAPACITOR, SlimefunItems.ELECTRIC_MOTOR};
 
   public static final SlimefunItemStack ELECTRIC_CORE_MACHINE_II = new SlimefunItemStack(
       "ELECTRIC_CORE_MACHINE_II",
@@ -49,8 +47,7 @@ public class ElectricCoreMachine extends MediumContainerMachine {
 
   public static final ItemStack[] RECIPE_ELECTRIC_CORE_MACHINE_II = new ItemStack[]{
       SupremeComponents.CONVEYANCE_MACHINE, SupremeCetrus.CETRUS_LUX, SupremeComponents.CONVEYANCE_MACHINE,
-      SupremeComponents.INDUCTOR_MACHINE, ElectricCoreMachine.ELECTRIC_CORE_MACHINE,
-      SupremeComponents.INDUCTOR_MACHINE,
+      SupremeComponents.INDUCTOR_MACHINE, ElectricCoreMachine.ELECTRIC_CORE_MACHINE, SupremeComponents.INDUCTOR_MACHINE,
       SupremeComponents.BLEND_MACHINE, SupremeCetrus.CETRUS_IGNIS, SupremeComponents.BLEND_MACHINE};
 
   public static final SlimefunItemStack ELECTRIC_CORE_MACHINE_III = new SlimefunItemStack(
