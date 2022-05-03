@@ -1,17 +1,16 @@
 package com.github.relativobr.supremeexpansion.setup;
 
-import com.github.relativobr.supremeexpansion.Categories;
+import com.github.relativobr.supremeexpansion.util.ItemGroups;
 import com.github.relativobr.supremeexpansion.SupremeExpansion;
 import com.github.relativobr.supremeexpansion.machine.ElectricCoreMachine;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import javax.annotation.Nonnull;
 
 public class SetupElectricMachine {
 
-  public static void setup(@Nonnull SupremeExpansion plugin) {
+  public static void setup(SupremeExpansion sup) {
 
     new ElectricCoreMachine(
-            Categories.MACHINES_CATEGORY,
+            ItemGroups.MACHINES_CATEGORY,
             ElectricCoreMachine.ELECTRIC_CORE_MACHINE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             ElectricCoreMachine.RECIPE_ELECTRIC_CORE_MACHINE)
@@ -20,10 +19,10 @@ public class SetupElectricMachine {
         .setCapacity(40)
         .setEnergyConsumption(20)
         .setProcessingSpeed(1)
-        .register(plugin);
+        .register(sup);
 
     new ElectricCoreMachine(
-            Categories.MACHINES_CATEGORY,
+            ItemGroups.MACHINES_CATEGORY,
             ElectricCoreMachine.ELECTRIC_CORE_MACHINE_II,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             ElectricCoreMachine.RECIPE_ELECTRIC_CORE_MACHINE_II)
@@ -32,10 +31,10 @@ public class SetupElectricMachine {
         .setCapacity(200)
         .setEnergyConsumption(100)
         .setProcessingSpeed(5)
-        .register(plugin);
+        .register(sup);
 
     new ElectricCoreMachine(
-            Categories.MACHINES_CATEGORY,
+            ItemGroups.MACHINES_CATEGORY,
             ElectricCoreMachine.ELECTRIC_CORE_MACHINE_III,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             ElectricCoreMachine.RECIPE_ELECTRIC_CORE_MACHINE_III)
@@ -44,6 +43,6 @@ public class SetupElectricMachine {
         .setCapacity(600)
         .setEnergyConsumption(300)
         .setProcessingSpeed(15)
-        .register(plugin);
+        .register(sup);
   }
 }

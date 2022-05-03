@@ -1,7 +1,7 @@
 package com.github.relativobr.supremeexpansion.machine;
 
+import com.github.relativobr.supremeexpansion.util.ItemGroups;
 import com.github.relativobr.supremeexpansion.SupremeExpansion;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
@@ -28,56 +28,66 @@ import org.bukkit.inventory.ItemStack;
 
 public class MultiBlockGearFabricator extends MultiBlockMachine implements NotPlaceable {
 
-  public static final SlimefunItemStack GEAR_FABRICATOR = new SlimefunItemStack(
-      "MACHINE_GEAR_FABRICATOR",
-      Material.SMITHING_TABLE, "&eGear Fabricator",
-      "", "&7&oYou can craft weapons, armor and tools here!",
-      "", "&aMultiBlock Machine");
-  public static final RecipeType MACHINE_GEAR_FABRICATOR = new RecipeType(
-      new NamespacedKey(SupremeExpansion.instance,
-          "MACHINE_GEAR_FABRICATOR_KEY"), GEAR_FABRICATOR);
-  private final SupremeExpansion plugin;
+  public static final SlimefunItemStack GEAR_FABRICATOR =
+      new SlimefunItemStack(
+          "MACHINE_GEAR_FABRICATOR",
+          Material.SMITHING_TABLE,
+          "&eGear Fabricator",
+          "",
+          "&7&oYou can craft weapons, armor and tools here!",
+          "",
+          "&aMultiBlock Machine");
+  public static final RecipeType MACHINE_GEAR_FABRICATOR =
+      new RecipeType(
+          new NamespacedKey(SupremeExpansion.inst(), "MACHINE_GEAR_FABRICATOR_KEY"),
+          GEAR_FABRICATOR);
 
   @ParametersAreNonnullByDefault
-  public MultiBlockGearFabricator(SupremeExpansion plugin, ItemGroup category) {
-    super(category, GEAR_FABRICATOR, new ItemStack[]{
-            new ItemStack(Material.ENCHANTING_TABLE), new ItemStack(Material.DISPENSER),
-            new ItemStack(Material.SMITHING_TABLE),
-            new ItemStack(Material.BLUE_STAINED_GLASS_PANE), new ItemStack(Material.ANVIL),
-            new ItemStack(Material.RED_STAINED_GLASS_PANE),
-            new ItemStack(Material.BLUE_STAINED_GLASS_PANE), new ItemStack(Material.BLAST_FURNACE),
-            new ItemStack(Material.RED_STAINED_GLASS_PANE)},
-        new ItemStack[0], BlockFace.SELF);
-    this.plugin = plugin;
+  public MultiBlockGearFabricator() {
+    super(
+        ItemGroups.MACHINES_CATEGORY,
+        GEAR_FABRICATOR,
+        new ItemStack[] {
+          new ItemStack(Material.ENCHANTING_TABLE),
+          new ItemStack(Material.DISPENSER),
+          new ItemStack(Material.SMITHING_TABLE),
+          new ItemStack(Material.BLUE_STAINED_GLASS_PANE),
+          new ItemStack(Material.ANVIL),
+          new ItemStack(Material.RED_STAINED_GLASS_PANE),
+          new ItemStack(Material.BLUE_STAINED_GLASS_PANE),
+          new ItemStack(Material.BLAST_FURNACE),
+          new ItemStack(Material.RED_STAINED_GLASS_PANE)
+        },
+        new ItemStack[0],
+        BlockFace.SELF);
   }
-
 
   public static RecipeType getMachine() {
     return MACHINE_GEAR_FABRICATOR;
   }
 
-  public static void interactGearMachine(SupremeExpansion plugin, MultiBlockMachine machine,
-      Player p, Block b) {
+  @Override
+  public void onInteract(Player p, Block b) {
 
     Block dispenser = b.getRelative(BlockFace.UP);
     if (!dispenser.isEmpty()) {
 
-      BlastFurnace blastFurnace = (BlastFurnace) PaperLib.getBlockState(
-          b.getRelative(BlockFace.DOWN), false).getState();
+      BlastFurnace blastFurnace =
+          (BlastFurnace) PaperLib.getBlockState(b.getRelative(BlockFace.DOWN), false).getState();
       FurnaceInventory furnaceInventory = blastFurnace.getInventory();
 
       Inventory inv = ((Dispenser) dispenser.getState()).getInventory();
-      List<ItemStack[]> inputs = RecipeType.getRecipeInputList(machine);
+      List<ItemStack[]> inputs = RecipeType.getRecipeInputList(this);
 
       recipe:
       for (ItemStack[] input : inputs) {
         for (int i = 0; i < inv.getContents().length; i++) {
-            if (!SlimefunUtils.isItemSimilar(inv.getContents()[i], input[i], false, true)) {
-                continue recipe;
-            }
+          if (!SlimefunUtils.isItemSimilar(inv.getContents()[i], input[i], false, true)) {
+            continue recipe;
+          }
         }
 
-        ItemStack output = RecipeType.getRecipeOutputList(machine, input);
+        ItemStack output = RecipeType.getRecipeOutputList(this, input);
         SlimefunItem outputItem = SlimefunItem.getByItem(output);
 
         if (outputItem == null || outputItem.canUse(p, true)) {
@@ -95,32 +105,31 @@ public class MultiBlockGearFabricator extends MultiBlockMachine implements NotPl
           }
 
           Bukkit.getScheduler()
-              .runTaskLater(plugin, () -> p.getWorld().playSound(dispenser.getLocation(),
-                  Sound.BLOCK_LAVA_EXTINGUISH, 1F, 1F), 55L);
+              .runTaskLater(
+                  SupremeExpansion.inst(),
+                  () ->
+                      p.getWorld()
+                          .playSound(dispenser.getLocation(), Sound.BLOCK_LAVA_EXTINGUISH, 1F, 1F),
+                  55L);
           for (int i = 1; i < 7; i++) {
             Bukkit.getScheduler()
-                .runTaskLater(plugin, () -> p.getWorld().playSound(dispenser.getLocation(),
-                    Sound.BLOCK_METAL_PLACE, 7F, 1F), i * 5L);
+                .runTaskLater(
+                    SupremeExpansion.inst(),
+                    () ->
+                        p.getWorld()
+                            .playSound(dispenser.getLocation(), Sound.BLOCK_METAL_PLACE, 7F, 1F),
+                    i * 5L);
           }
 
           if (furnaceInventory.getResult() == null) {
             furnaceInventory.setResult(output);
           }
-
         }
 
         return;
-
       }
     }
 
     Slimefun.getLocalization().sendMessage(p, "machines.pattern-not-found", true);
-
   }
-
-  @Override
-  public void onInteract(Player p, Block b) {
-    interactGearMachine(plugin, this, p, b);
-  }
-
 }

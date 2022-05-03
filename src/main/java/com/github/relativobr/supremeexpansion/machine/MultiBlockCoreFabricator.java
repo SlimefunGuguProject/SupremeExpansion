@@ -1,7 +1,7 @@
 package com.github.relativobr.supremeexpansion.machine;
 
+import com.github.relativobr.supremeexpansion.util.ItemGroups;
 import com.github.relativobr.supremeexpansion.SupremeExpansion;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
@@ -25,26 +25,38 @@ import org.bukkit.inventory.ItemStack;
 
 public class MultiBlockCoreFabricator extends MultiBlockMachine implements NotPlaceable {
 
-  public static final SlimefunItemStack CORE_FABRICATOR = new SlimefunItemStack("CORE_FABRICATOR",
-      Material.SHROOMLIGHT, "&eCore Fabricator",
-      "", "&7&oYou can craft core here!",
-      "", "&aMultiBlock Machine");
-  public static final RecipeType MACHINE_CORE_FABRICATOR = new RecipeType(
-      new NamespacedKey(SupremeExpansion.instance,
-          "MACHINE_CORE_FABRICATOR_KEY"), CORE_FABRICATOR);
-  private final SupremeExpansion plugin;
+  public static final SlimefunItemStack CORE_FABRICATOR =
+      new SlimefunItemStack(
+          "CORE_FABRICATOR",
+          Material.SHROOMLIGHT,
+          "&eCore Fabricator",
+          "",
+          "&7&oYou can craft core here!",
+          "",
+          "&aMultiBlock Machine");
+  public static final RecipeType MACHINE_CORE_FABRICATOR =
+      new RecipeType(
+          new NamespacedKey(SupremeExpansion.inst(), "MACHINE_CORE_FABRICATOR_KEY"),
+          CORE_FABRICATOR);
 
   @ParametersAreNonnullByDefault
-  public MultiBlockCoreFabricator(SupremeExpansion plugin, ItemGroup category) {
-    super(category, CORE_FABRICATOR, new ItemStack[]{
-            new ItemStack(Material.SHROOMLIGHT), new ItemStack(Material.ORANGE_STAINED_GLASS),
-            new ItemStack(Material.SHROOMLIGHT),
-            new ItemStack(Material.IRON_BARS), new ItemStack(Material.IRON_TRAPDOOR),
-            new ItemStack(Material.IRON_BARS),
-            new ItemStack(Material.GOLD_BLOCK), new ItemStack(Material.DISPENSER),
-            new ItemStack(Material.GOLD_BLOCK)},
-        new ItemStack[0], BlockFace.SELF);
-    this.plugin = plugin;
+  public MultiBlockCoreFabricator() {
+    super(
+        ItemGroups.MACHINES_CATEGORY,
+        CORE_FABRICATOR,
+        new ItemStack[] {
+          new ItemStack(Material.SHROOMLIGHT),
+          new ItemStack(Material.ORANGE_STAINED_GLASS),
+          new ItemStack(Material.SHROOMLIGHT),
+          new ItemStack(Material.IRON_BARS),
+          new ItemStack(Material.IRON_TRAPDOOR),
+          new ItemStack(Material.IRON_BARS),
+          new ItemStack(Material.GOLD_BLOCK),
+          new ItemStack(Material.DISPENSER),
+          new ItemStack(Material.GOLD_BLOCK)
+        },
+        new ItemStack[0],
+        BlockFace.SELF);
   }
 
   public static RecipeType getMachine() {
@@ -63,9 +75,9 @@ public class MultiBlockCoreFabricator extends MultiBlockMachine implements NotPl
       recipe:
       for (ItemStack[] input : inputs) {
         for (int i = 0; i < inv.getContents().length; i++) {
-            if (!SlimefunUtils.isItemSimilar(inv.getContents()[i], input[i], false, true)) {
-                continue recipe;
-            }
+          if (!SlimefunUtils.isItemSimilar(inv.getContents()[i], input[i], false, true)) {
+            continue recipe;
+          }
         }
 
         ItemStack output = RecipeType.getRecipeOutputList(this, input);
@@ -96,12 +108,20 @@ public class MultiBlockCoreFabricator extends MultiBlockMachine implements NotPl
           }
 
           Bukkit.getScheduler()
-              .runTaskLater(plugin, () -> p.getWorld().playSound(dispenser.getLocation(),
-                  Sound.BLOCK_LAVA_EXTINGUISH, 1F, 1F), 55L);
+              .runTaskLater(
+                  SupremeExpansion.inst(),
+                  () ->
+                      p.getWorld()
+                          .playSound(dispenser.getLocation(), Sound.BLOCK_LAVA_EXTINGUISH, 1F, 1F),
+                  55L);
           for (int i = 1; i < 7; i++) {
             Bukkit.getScheduler()
-                .runTaskLater(plugin, () -> p.getWorld().playSound(dispenser.getLocation(),
-                    Sound.BLOCK_METAL_PLACE, 7F, 1F), i * 5L);
+                .runTaskLater(
+                    SupremeExpansion.inst(),
+                    () ->
+                        p.getWorld()
+                            .playSound(dispenser.getLocation(), Sound.BLOCK_METAL_PLACE, 7F, 1F),
+                    i * 5L);
           }
 
           if (outputInv != null) {
@@ -109,17 +129,12 @@ public class MultiBlockCoreFabricator extends MultiBlockMachine implements NotPl
           } else {
             inv.addItem(output);
           }
-
         }
 
         return;
-
       }
     }
 
     Slimefun.getLocalization().sendMessage(p, "machines.pattern-not-found", true);
-
   }
-
-
 }
