@@ -16,9 +16,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "SUPREME_NUGGET",
             "cffc977cc7e10e564a09638a53bbc4c54c9c8dac7450ba3dfa3c9099d94f5",
-            "&aNugget Supreme",
+            "&a至尊粒子",
             "",
-            "&7From the Nugget Supreme");
+            "&7由虚无到至尊...");
     public static final ItemStack[] RECIPE_SUPREME_NUGGET = {
         null, null, null,
         null, SupremeQuarry.UNIQUENUGGETS_QUARRY, null,
@@ -29,9 +29,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "SUPREME",
             "c69e3e6e5b2b92f0beb368b738b993d7ba225bf9bb2758bfc9fc2daba4a5a7d",
-            "&aSupreme",
+            "&a至尊之心",
             "",
-            "&7The Supreme");
+            "&7由至尊粒子制作而成");
     public static final ItemStack[] RECIPE_SUPREME = {
         SupremeComponents.SUPREME_NUGGET, SupremeComponents.SUPREME_NUGGET,
         SupremeComponents.SUPREME_NUGGET,
@@ -45,9 +45,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_THORNIUM_BIT",
             Material.IRON_NUGGET,
-            "&aThornium Bit",
+            "&a钍粒",
             "",
-            "&7From the depths of the word...");
+            "&7从世界深处迸发...");
     public static final ItemStack[] RECIPE_THORNIUM_BIT = {
         null,
         null,
@@ -64,9 +64,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_THORNIUM_DUST",
             Material.GUNPOWDER,
-            "&aThornium Dust",
+            "&a钍粉",
             "",
-            "&7From the Thornium Bit");
+            "&7由钍粒聚合");
     public static final ItemStack[] RECIPE_THORNIUM_DUST = {
         SupremeComponents.THORNIUM_BIT, SupremeComponents.THORNIUM_BIT, SupremeComponents.THORNIUM_BIT,
         SupremeComponents.THORNIUM_BIT, SupremeComponents.THORNIUM_BIT, SupremeComponents.THORNIUM_BIT,
@@ -77,9 +77,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_THORNIUM_INGOT",
             Material.IRON_INGOT,
-            "&aThornium Ingot",
+            "&a至尊钍锭",
             "",
-            "&7From the Thornium Dust");
+            "&7由钍粉冶炼");
     public static final ItemStack[] RECIPE_THORNIUM_INGOT = {
         SupremeComponents.THORNIUM_DUST, SupremeComponents.THORNIUM_DUST,
         SupremeComponents.THORNIUM_DUST,
@@ -93,9 +93,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_THORNIUM_BIT_SYNTHETIC",
             Material.GOLD_NUGGET,
-            "&aThornium Bit Synthetic",
+            "&a人造钍粒",
             "",
-            "&7From the Thornium Bit");
+            "&7新的发现");
     public static final ItemStack[] RECIPE_THORNIUM_BIT_SYNTHETIC = {
         SlimefunItems.SYNTHETIC_SAPPHIRE,
         SlimefunItems.DAMASCUS_STEEL_INGOT,
@@ -112,9 +112,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_THORNIUM_DUST_SYNTHETIC",
             Material.GLOWSTONE_DUST,
-            "&aThornium Dust Synthetic",
+            "&a人造钍粉",
             "",
-            "&7From the Thornium Dust");
+            "&7由钍粒聚合");
     public static final ItemStack[] RECIPE_THORNIUM_DUST_SYNTHETIC = {
         SlimefunItems.SYNTHETIC_EMERALD,
         SlimefunItems.HARDENED_METAL_INGOT,
@@ -131,9 +131,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_THORNIUM_INGOT_SYNTHETIC",
             Material.GOLD_INGOT,
-            "&aThornium Ingot Synthetic",
+            "&a人造至尊钍锭",
             "",
-            "&7From the Thornium Ingot");
+            "&7由钍粉冶炼");
     public static final ItemStack[] RECIPE_THORNIUM_INGOT_SYNTHETIC = {
         SlimefunItems.SYNTHETIC_DIAMOND,
         SlimefunItems.STEEL_PLATE,
@@ -150,9 +150,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_THORNIUM_CARBONADO",
             Material.NETHERITE_INGOT,
-            "&aThornium Carbonado",
+            "&a碳钍",
             "",
-            "&7From the Thornium Ingot");
+            "&7由钍开发的新材料");
     public static final ItemStack[] RECIPE_THORNIUM_CARBONADO = {
         SlimefunItems.CARBONADO,
         SlimefunItems.REINFORCED_PLATE,
@@ -169,9 +169,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_THORNIUM_ENERGIZED",
             Material.NETHERITE_INGOT,
-            "&aThornium Energized",
+            "&a充能钍",
             "",
-            "&7From the Thornium Ingot");
+            "&7将能量注入钍中");
     public static final ItemStack[] RECIPE_THORNIUM_ENERGIZED = {
         SlimefunItems.BLISTERING_INGOT_3,
         SlimefunItems.REDSTONE_ALLOY,
@@ -188,9 +188,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_ALLOY_ZIRCONIUM",
             Material.IRON_INGOT,
-            "&aAlloy Zirconium",
+            "&a锆合金",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_ALLOY_ZIRCONIUM = {
         SlimefunItems.ZINC_DUST,
         SlimefunItems.SOLDER_INGOT,
@@ -207,9 +207,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_ZIRCONIUM_PLATE",
             Material.IRON_BLOCK,
-            "&aZirconium Plate",
+            "&a锆合金板",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_ZIRCONIUM_PLATE = {
         SupremeComponents.ALLOY_ZIRCONIUM,
         SupremeComponents.ALLOY_ZIRCONIUM,
@@ -226,9 +226,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_ALLOY_TITANIUM",
             Material.IRON_INGOT,
-            "&aAlloy Titanium",
+            "&a钛合金",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_ALLOY_TITANIUM = {
         SlimefunItems.TIN_DUST,
         SlimefunItems.DAMASCUS_STEEL_INGOT,
@@ -245,9 +245,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_TITANIUM_PLATE",
             Material.IRON_BLOCK,
-            "&aTitanium Plate",
+            "&a钛合金板",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_TITANIUM_PLATE = {
         SupremeComponents.ALLOY_TITANIUM,
         SupremeComponents.ALLOY_TITANIUM,
@@ -264,9 +264,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_ALLOY_IRIDIUM",
             Material.IRON_INGOT,
-            "&aAlloy Iridium",
+            "&a铱合金",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_ALLOY_IRIDIUM = {
         SlimefunItems.SILVER_DUST,
         SlimefunItems.BILLON_INGOT,
@@ -283,9 +283,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_IRIDIUM_PLATE",
             Material.IRON_BLOCK,
-            "&aIridium Plate",
+            "&a铱合金板",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_IRIDIUM_PLATE = {
         SupremeComponents.ALLOY_IRIDIUM,
         SupremeComponents.ALLOY_IRIDIUM,
@@ -300,7 +300,7 @@ public class SupremeComponents {
 
     public static final SlimefunItemStack ALLOY_AURUM =
         new SlimefunItemStack(
-            "RESOURCE_ALLOY_AURUM", Material.GOLD_INGOT, "&aAlloy Aurum", "", "&7Machine Component");
+            "RESOURCE_ALLOY_AURUM", Material.GOLD_INGOT, "&a金合金", "", "&7机器零件");
     public static final ItemStack[] RECIPE_ALLOY_AURUM = {
         SlimefunItems.GOLD_DUST,
         SlimefunItems.COBALT_INGOT,
@@ -315,7 +315,7 @@ public class SupremeComponents {
 
     public static final SlimefunItemStack AURUM_PLATE =
         new SlimefunItemStack(
-            "RESOURCE_AURUM_PLATE", Material.GOLD_BLOCK, "&aAurum Plate", "", "&7Machine Component");
+            "RESOURCE_AURUM_PLATE", Material.GOLD_BLOCK, "&a金合金板", "", "&7机器零件");
     public static final ItemStack[] RECIPE_AURUM_PLATE = {
         SupremeComponents.ALLOY_AURUM,
         SupremeComponents.ALLOY_AURUM,
@@ -332,9 +332,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_ALLOY_MANGANESE",
             Material.GOLD_INGOT,
-            "&aAlloy Manganese",
+            "&a镁合金",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_ALLOY_MANGANESE = {
         SlimefunItems.MAGNESIUM_DUST,
         SlimefunItems.DURALUMIN_INGOT,
@@ -351,9 +351,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_MANGANESE_PLATE",
             Material.GOLD_BLOCK,
-            "&aManganese Plate",
+            "&a镁合金板",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_MANGANESE_PLATE = {
         SupremeComponents.ALLOY_MANGANESE,
         SupremeComponents.ALLOY_MANGANESE,
@@ -370,9 +370,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_ALLOY_PLATINUM",
             Material.GOLD_INGOT,
-            "&aAlloy Platinum",
+            "&a铂合金",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_ALLOY_PLATINUM = {
         SlimefunItems.LEAD_DUST,
         SlimefunItems.BRASS_INGOT,
@@ -389,9 +389,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_PLATINUM_PLATE",
             Material.GOLD_BLOCK,
-            "&aPlatinum Plate",
+            "&a铂合金板",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_PLATINUM_PLATE = {
         SupremeComponents.ALLOY_PLATINUM,
         SupremeComponents.ALLOY_PLATINUM,
@@ -408,9 +408,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_ALLOY_ADAMANTIUM",
             Material.NETHERITE_INGOT,
-            "&aAlloy Adamantium",
+            "&a精金合金",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_ALLOY_ADAMANTIUM = {
         SlimefunItems.ALUMINUM_DUST,
         SlimefunItems.REINFORCED_ALLOY_INGOT,
@@ -427,9 +427,9 @@ public class SupremeComponents {
         new SlimefunItemStack(
             "RESOURCE_ADAMANTIUM_PLATE",
             Material.NETHERITE_BLOCK,
-            "&aAdamantium Plate",
+            "&a精金合金板",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_ADAMANTIUM_PLATE = {
         SupremeComponents.ALLOY_ADAMANTIUM,
         SupremeComponents.ALLOY_ADAMANTIUM,
@@ -448,7 +448,7 @@ public class SupremeComponents {
             Material.NETHERITE_INGOT,
             "&aThornerite",
             "",
-            "&7Machine Component");
+            "&7机器零件");
     public static final ItemStack[] RECIPE_THORNERITE = {
         SupremeComponents.THORNIUM_INGOT,
         SupremeComponents.ALLOY_ADAMANTIUM,
@@ -467,7 +467,7 @@ public class SupremeComponents {
             Material.DEAD_FIRE_CORAL_BLOCK,
             "&aInductive Machine",
             "",
-            "&cMachine Component");
+            "&c机器零件");
     public static final ItemStack[] RECIPE_INDUCTIVE_MACHINE = {
         SlimefunItems.REDSTONE_ALLOY,
         SupremeComponents.ALLOY_PLATINUM,
@@ -486,7 +486,7 @@ public class SupremeComponents {
             Material.FIRE_CORAL_BLOCK,
             "&aInductor Machine",
             "",
-            "&cAdvanced Machine Component");
+            "&cAdvanced 机器零件");
     public static final ItemStack[] RECIPE_INDUCTOR_MACHINE = {
         SlimefunItems.REDSTONE_ALLOY,
         SupremeComponents.PLATINUM_PLATE,
@@ -505,7 +505,7 @@ public class SupremeComponents {
             Material.DEAD_BRAIN_CORAL_BLOCK,
             "&aRustless Machine",
             "",
-            "&cMachine Component");
+            "&c机器零件");
     public static final ItemStack[] RECIPE_RUSTLESS_MACHINE = {
         SlimefunItems.HARDENED_METAL_INGOT,
         SupremeComponents.ALLOY_ZIRCONIUM,
@@ -524,7 +524,7 @@ public class SupremeComponents {
             Material.BRAIN_CORAL_BLOCK,
             "&aStainless Machine",
             "",
-            "&cAdvanced Machine Component");
+            "&cAdvanced 机器零件");
     public static final ItemStack[] RECIPE_STAINLESS_MACHINE = {
         SlimefunItems.HARDENED_METAL_INGOT,
         SupremeComponents.ZIRCONIUM_PLATE,
@@ -543,7 +543,7 @@ public class SupremeComponents {
             Material.DEAD_HORN_CORAL_BLOCK,
             "&aCarriage Machine",
             "",
-            "&cMachine Component");
+            "&c机器零件");
     public static final ItemStack[] RECIPE_CARRIAGE_MACHINE = {
         SlimefunItems.GILDED_IRON,
         SupremeComponents.ALLOY_AURUM,
@@ -562,7 +562,7 @@ public class SupremeComponents {
             Material.HORN_CORAL_BLOCK,
             "&aConveyance Machine",
             "",
-            "&cAdvanced Machine Component");
+            "&cAdvanced 机器零件");
     public static final ItemStack[] RECIPE_CONVEYANCE_MACHINE = {
         SlimefunItems.GILDED_IRON,
         SupremeComponents.AURUM_PLATE,
@@ -581,7 +581,7 @@ public class SupremeComponents {
             Material.DEAD_TUBE_CORAL_BLOCK,
             "&aPetrifier Machine",
             "",
-            "&cMachine Component");
+            "&c机器零件");
     public static final ItemStack[] RECIPE_PETRIFIER_MACHINE = {
         SupremeCoreAlloy.RESOURCE_CORE_COAL,
         SupremeComponents.RUSTLESS_MACHINE,
@@ -600,7 +600,7 @@ public class SupremeComponents {
             Material.TUBE_CORAL_BLOCK,
             "&aCrystallizer Machine",
             "",
-            "&cAdvanced Machine Component");
+            "&cAdvanced 机器零件");
     public static final ItemStack[] RECIPE_CRYSTALLIZER_MACHINE = {
         SupremeCoreAlloy.RESOURCE_CORE_DIAMOND, new ItemStack(STAINLESS_MACHINE),
         SupremeCoreAlloy.RESOURCE_CORE_DIAMOND,
@@ -616,7 +616,7 @@ public class SupremeComponents {
             Material.BUBBLE_CORAL_BLOCK,
             "&aBlend Machine",
             "",
-            "&cAdvanced Machine Component");
+            "&cAdvanced 机器零件");
     public static final ItemStack[] RECIPE_BLEND_MACHINE = {
         SupremeComponents.INDUCTOR_MACHINE,
         SupremeCoreAlloy.RESOURCE_CORE_DIAMOND,

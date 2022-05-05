@@ -76,7 +76,7 @@
         <dependency>
             <groupId>net.guizhanss</groupId>
             <artifactId>GuizhanLib</artifactId>
-            <version>0.8.5</version>
+            <version>0.9.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -87,17 +87,6 @@
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-
-                <configuration>
-                    <junitArtifactName>org.junit.jupiter:junit-jupiter</junitArtifactName>
-                    <trimStackTrace>false</trimStackTrace>
-                </configuration>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -115,7 +104,6 @@
                             <artifact>*:*</artifact>
                             <excludes>
                                 <exclude>META-INF/*</exclude>
-                                <exclude>minecraft.*</exclude>
                             </excludes>
                         </filter>
                     </filters>
