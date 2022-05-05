@@ -1,19 +1,16 @@
 package com.github.relativobr.supremeexpansion;
 
+import com.github.relativobr.supremeexpansion.setup.MainSetup;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
-import net.guizhanss.guizhanlib.minecraft.helper.inventory.ItemStackHelper;
 import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.enchantments.EnchantmentWrapper;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
@@ -24,7 +21,7 @@ import java.util.logging.Level;
 
 public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
 
-    public static SupremeExpansion instance = null;
+    private static SupremeExpansion instance;
 
     public static SupremeExpansion inst() {
         return instance;
@@ -33,20 +30,25 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
     @Override
     public void onEnable() {
 
-        Config cfg = new Config(this);
+        instance = this;
 
+        SupremeExpansion.inst().log(Level.INFO, "########################################");
+        SupremeExpansion.inst().log(Level.INFO, "       SupremeExpansion 至尊研究院        ");
+        SupremeExpansion.inst().log(Level.INFO, "########################################");
+
+        Config cfg = new Config(this);
         if (cfg.getBoolean("options.auto-update") &&
             getDescription().getVersion().startsWith("Builds ")) {
             new GuizhanBuildsUpdater(this, getFile(), "SlimefunGuguProject", "SupremeExpansion", "master", false).start();
         }
 
-        instance = this;
+        MainSetup.setup(this);
 
-        // build supreme expansion
-        SupremeExpansion.inst().log(Level.INFO, "### 正在加载 至尊研究院 ###");
-        Setup.setup(this);
-        SupremeExpansion.inst().log(Level.INFO, "### 完成加载 至尊研究院 ###");
+    }
 
+    @Override
+    public void onDisable() {
+        instance = null;
     }
 
     @Override
@@ -196,67 +198,6 @@ public class SupremeExpansion extends JavaPlugin implements SlimefunAddon {
             item.setItemMeta(meta);
 
         }
-    }
-
-    public PotionEffect[] getSupremeEffects(SlimefunItemStack item) {
-
-        // find path
-        String itemPath = item.getItemId().toLowerCase();
-        PotionEffect[] effect;
-        int amplifier = 0;
-        if (itemPath.contains("legendary") || itemPath.contains("supreme")) {
-            amplifier = 2;
-        } else if (itemPath.contains("epic") || itemPath.contains("rare")) {
-            amplifier = 1;
-        }
-
-        if (itemPath.contains("helmet")) {
-            effect = new PotionEffect[] {
-                new PotionEffect(PotionEffectType.NIGHT_VISION, 600, amplifier, false, false, false),
-                new PotionEffect(PotionEffectType.CONDUIT_POWER, 600, amplifier, false, false, false),
-                new PotionEffect(PotionEffectType.WATER_BREATHING, 600, amplifier, false, false, false)
-            };
-        } else if (itemPath.contains("chestplate")) {
-            effect = new PotionEffect[] {
-                new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 600, amplifier, false, false, false),
-                new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 600, amplifier, false, false, false),
-                new PotionEffect(PotionEffectType.SATURATION, 600, amplifier, false, false, false)
-            };
-        } else if (itemPath.contains("leggings")) {
-            effect = new PotionEffect[] {
-                new PotionEffect(PotionEffectType.SPEED, 600, amplifier, false, false, false),
-                new PotionEffect(PotionEffectType.FAST_DIGGING, 600, amplifier, false, false, false),
-                new PotionEffect(PotionEffectType.REGENERATION, 600, amplifier, false, false, false)
-            };
-        } else if (itemPath.contains("boots")) {
-            effect = new PotionEffect[] {
-                new PotionEffect(PotionEffectType.DOLPHINS_GRACE, 600, amplifier, false, false, false),
-                new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 600, amplifier, false, false, false)
-            };
-        } else {
-            effect = new PotionEffect[] {};
-        }
-
-        return effect;
-
-    }
-
-    public void addLoreQuarry(@Nonnull SlimefunItemStack item, ItemStack[] output) {
-        ItemMeta meta = item.getItemMeta();
-        // lore
-        List<String> lore;
-        if (meta.hasLore()) {
-            lore = meta.getLore();
-        } else {
-            lore = new ArrayList<>();
-        }
-        for (ItemStack itemStack : output) {
-            String name = ItemStackHelper.getDisplayName(itemStack);
-            lore.add(ChatColor.AQUA + name + " " + ChatColor.YELLOW + itemStack.getAmount() + "%");
-        }
-        meta.setLore(lore);
-        // add meta
-        item.setItemMeta(meta);
     }
 
     public final void log(Level level, String messages) {

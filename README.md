@@ -1,6 +1,5 @@
 # Supreme Expansion
-Supreme Expansion is a addon to Slimefun 4 which brings various new resources to craft powerful contains items, gear and machines
-
+Supreme Expansion is an addon for Slimefun which adds 100+ various new resources that will allow you to craft powerful new items, weapons, tools and armor. These can be made up from titanium, aurum, adamantium, thornium with some being magical, rare, epic, legendary or supreme! It also adds 12 new electric generators, 5 new capacitors and even more... 
 
 ## Requirements
 
@@ -9,13 +8,13 @@ Minecraft Version: 1.17+
 Slimefun Version: RC-31
 
 
-### [Download](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/)
-[![Build Status](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/badge.svg)](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master)
+### [Download](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/main/)
+[![Build Status](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/main/badge.svg)](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/main)
 
 
 ## Bugs/Suggestions
 
-Make a new issue, pull request, or contact me on discord @RelativoBR#9577
+Make a new issue, pull request, or contact me on discord @WilianSantos#7381 or @RelativoBR#9577
 
 <p>
   <a href="https://discord.gg/slimefun">
@@ -25,6 +24,7 @@ Make a new issue, pull request, or contact me on discord @RelativoBR#9577
     <img src="https://discordapp.com/api/guilds/809178621424041997/widget.png?style=banner3" alt="Discord Invite"/>
   </a>
 </p>
+
 
 ## Machines
 - **Core Fabricator** - MultiBlock Machine - You can craft core here
