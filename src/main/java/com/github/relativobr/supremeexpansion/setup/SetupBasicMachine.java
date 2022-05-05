@@ -7,15 +7,15 @@ import com.github.relativobr.supremeexpansion.machine.MultiBlockMagicalFabricato
 
 public class SetupBasicMachine {
 
-  public static void setup(SupremeExpansion sup) {
+    public static void setup(SupremeExpansion sup) {
 
-    // define CoreFabricator
-    new MultiBlockCoreFabricator().register(sup);
+        // define CoreFabricator
+        new MultiBlockCoreFabricator().register(sup);
 
-    // define MagicalFabricator
-    new MultiBlockMagicalFabricator().register(sup);
+        // define MagicalFabricator
+        new MultiBlockMagicalFabricator().register(sup);
 
-    // define GearFabricator
-    new MultiBlockGearFabricator().register(sup);
-  }
+        // define GearFabricator
+        new MultiBlockGearFabricator().register(sup);
+    }
 }
