@@ -53,10 +53,10 @@ public class SetupSupremeComponents {
     registerEnhancedCraft(
         sup, SupremeComponents.ADAMANTIUM_PLATE, SupremeComponents.RECIPE_ADAMANTIUM_PLATE);
 
-    registerEnhancedCraft(
+    registerNullRecipe(
         sup, SupremeComponents.THORNIUM_BIT, SupremeComponents.RECIPE_THORNIUM_BIT);
 
-    registerNullRecipe(
+    registerEnhancedCraft(
         sup, SupremeComponents.THORNIUM_DUST, SupremeComponents.RECIPE_THORNIUM_DUST);
 
     registerEnhancedCraft(
