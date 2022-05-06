@@ -180,7 +180,7 @@ public class AbstractQuarry extends SlimefunItem implements EnergyNetComponent {
                 InventoryRecipe.QUARRY_STATUS,
                 new CustomItemStack(
                     Material.OBSIDIAN,
-                    ChatColor.RED + "NOT-ACTIVE",
+                    ChatColor.RED + "未启用",
                     powerPerSecond,
                     powerCharged,
                     infoSpeed));
@@ -191,7 +191,7 @@ public class AbstractQuarry extends SlimefunItem implements EnergyNetComponent {
                 InventoryRecipe.QUARRY_STATUS,
                 new CustomItemStack(
                     Material.GLOWSTONE,
-                    ChatColor.GREEN + "ACTIVE",
+                    ChatColor.GREEN + "已启用",
                     powerPerSecond,
                     powerCharged,
                     infoSpeed));

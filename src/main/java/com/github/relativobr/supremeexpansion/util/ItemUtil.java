@@ -25,6 +25,7 @@ public class ItemUtil {
         } else {
             lore = new ArrayList<>();
         }
+        lore.add("");
         final ItemStack[] output = quarry.getOutput();
         for (ItemStack itemStack : output) {
             String name = ItemStackHelper.getDisplayName(itemStack);

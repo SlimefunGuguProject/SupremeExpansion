@@ -20,7 +20,7 @@ public class SupremeQuarry {
         new SlimefunItemStack(
             "UNIQUENUGGETS_QUARRY",
             "ec7007d16abcfac9c6830c74d37cfd439a26373457d91452c1a96b8e04a6d",
-            "&eNuggets of Supreme Quarry",
+            "&e至尊钻机",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             UtilEnergy.energyPowerPerItem(10),
@@ -30,7 +30,7 @@ public class SupremeQuarry {
         new SlimefunItemStack(
             "THORNIUM_QUARRY",
             "6ddd4a12da1cc2c9f9d6cd49fc778e3a11f3757de6dd312d70a0d47885189c0",
-            "&eThornium Quarry",
+            "&e钍石钻机",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             UtilEnergy.energyPowerPerItem(10),
@@ -40,7 +40,7 @@ public class SupremeQuarry {
         new SlimefunItemStack(
             "DIAMOND_QUARRY",
             "666070ce03a545ee4d263bcf27f36338d249d7cb7a2376f92c1673ae134e04b6",
-            "&eDiamond Quarry",
+            "&e钻石钻机",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             UtilEnergy.energyPowerPerItem(10),
@@ -50,7 +50,7 @@ public class SupremeQuarry {
         new SlimefunItemStack(
             "GOLD_QUARRY",
             "6c07d48fd8764bc8d01a10cc6426578862090d9e856f3a8dd7f974a7521efc43",
-            "&eGold Quarry",
+            "&e黄金钻机",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             UtilEnergy.energyPowerPerItem(20),
@@ -60,7 +60,7 @@ public class SupremeQuarry {
         new SlimefunItemStack(
             "IRON_QUARRY",
             "f8eecae423359d3f5efd1063a9a7bcfaa43839d75d3b223c808df7961dd173d0",
-            "&eIron Quarry",
+            "&e铁钻机",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             UtilEnergy.energyPowerPerItem(20),
@@ -70,7 +70,7 @@ public class SupremeQuarry {
         new SlimefunItemStack(
             "COAL_QUARRY",
             "579ee734b739c0d19546d5b4b049c01a055506cc00b0cfcbf177883d2c814c04",
-            "&eCoal Quarry",
+            "&e煤炭钻机",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             UtilEnergy.energyPowerPerItem(20),
