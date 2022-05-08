@@ -14,7 +14,10 @@ public class WeaponsThornium {
 
     public static final SlimefunItemStack THORNIUM_BOW =
         new SlimefunItemStack(
-            "WEAPONS_THORNIUM_BOW", Material.BOW, "&f&lThornium Bow", "&f&lA Bow of Thornium");
+            "WEAPONS_THORNIUM_BOW",
+            Material.BOW,
+            "&f&l钍石弓",
+            "&f&l由钍制成的弓");
     public static final ItemStack[] RECIPE_THORNIUM_BOW = {
         null,
         SupremeComponents.THORNIUM_INGOT,
@@ -31,37 +34,43 @@ public class WeaponsThornium {
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_BOW_MAGIC",
             Material.BOW,
-            "&a&lMagic Bow",
-            "&f&lA Magic Bow of Thornium");
+            "&a&l魔法弓",
+            "&f&l一把蕴含魔法的弓");
 
     public static final SlimefunItemStack THORNIUM_BOW_RARE =
         new SlimefunItemStack(
-            "WEAPONS_THORNIUM_BOW_RARE", Material.BOW, "&b&lRare Bow", "&f&lA Rare Bow of Thornium");
+            "WEAPONS_THORNIUM_BOW_RARE",
+            Material.BOW,
+            "&b&l稀有弓",
+            "&f&l一把珍奇的弓");
 
     public static final SlimefunItemStack THORNIUM_BOW_EPIC =
         new SlimefunItemStack(
-            "WEAPONS_THORNIUM_BOW_EPIC", Material.BOW, "&d&lEpic Bow", "&f&lA Epic Bow of Thornium");
+            "WEAPONS_THORNIUM_BOW_EPIC",
+            Material.BOW,
+            "&d&l史诗弓",
+            "&f&l一把精良的弓");
 
     public static final SlimefunItemStack THORNIUM_BOW_LEGENDARY =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_BOW_LEGENDARY",
             Material.BOW,
-            "&6&lLegendary Bow",
-            "&f&lA Legendary Bow of Thornium");
+            "&6&l传说弓",
+            "&f&l它曾在历史书上出现过");
 
     public static final SlimefunItemStack THORNIUM_BOW_SUPREME =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_BOW_SUPREME",
             Material.BOW,
-            "&4&lSupreme Bow",
-            "&f&lA Supreme Bow ofThornium");
+            "&4&l至尊弓",
+            "&f&l至尊的终极之弓");
 
     public static final SlimefunItemStack THORNIUM_SHIELD =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SHIELD",
             Material.SHIELD,
-            "&f&lThornium Shield",
-            "&f&lA Shield of Thornium");
+            "&f&l钍石盾",
+            "&f&l由钍制成的盾");
     public static final ItemStack[] RECIPE_THORNIUM_SHIELD = {
         SupremeCoreNature.RESOURCE_CORE_OAK_LOG,
         SupremeComponents.THORNIUM_INGOT,
@@ -78,43 +87,43 @@ public class WeaponsThornium {
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SHIELD_MAGIC",
             Material.SHIELD,
-            "&a&lMagic Shield",
-            "&f&lA Magic Shield of Thornium");
+            "&a&l魔法盾",
+            "&f&l一个蕴含魔法的盾牌");
 
     public static final SlimefunItemStack THORNIUM_SHIELD_RARE =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SHIELD_RARE",
             Material.SHIELD,
-            "&b&lRare Shield",
-            "&f&lA Rare Shield of Thornium");
+            "&b&l稀有盾",
+            "&f&l一个珍奇的盾牌");
 
     public static final SlimefunItemStack THORNIUM_SHIELD_EPIC =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SHIELD_EPIC",
             Material.SHIELD,
-            "&d&lEpic Shield",
-            "&f&lA Epic Shield of Thornium");
+            "&d&l史诗盾",
+            "&f&l一个精良的盾牌");
 
     public static final SlimefunItemStack THORNIUM_SHIELD_LEGENDARY =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SHIELD_LEGENDARY",
             Material.SHIELD,
-            "&6&lLegendary Shield",
-            "&f&lA Legendary Shield of Thornium");
+            "&6&l传说盾",
+            "&f&l它曾在历史书上出现过");
 
     public static final SlimefunItemStack THORNIUM_SHIELD_SUPREME =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SHIELD_SUPREME",
             Material.SHIELD,
-            "&4&lSupreme Shield",
-            "&f&lA Supreme Shield of Thornium");
+            "&4&l至尊盾",
+            "&f&l至尊的终极之盾");
 
     public static final SlimefunItemStack THORNIUM_SWORD =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SWORD",
             Material.NETHERITE_SWORD,
-            "&f&lThornium Sword",
-            "&f&lA Sword of Thornium");
+            "&f&l钍石剑",
+            "&f&l由钍制成的剑");
     public static final ItemStack[] RECIPE_THORNIUM_SWORD = {
         null, SupremeComponents.THORNIUM_INGOT, null,
         null, SupremeComponents.THORNIUM_INGOT, null,
@@ -125,34 +134,34 @@ public class WeaponsThornium {
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SWORD_MAGIC",
             Material.NETHERITE_SWORD,
-            "&a&lMagic Sword",
-            "&f&lA Magic Sword of Thornium");
+            "&a&l魔法剑",
+            "&f&l一把蕴含魔法的剑");
 
     public static final SlimefunItemStack THORNIUM_SWORD_RARE =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SWORD_RARE",
             Material.NETHERITE_SWORD,
-            "&b&lRare Sword",
-            "&f&lA Rare Sword of Thornium");
+            "&b&l稀有剑",
+            "&f&l一把珍奇的剑");
 
     public static final SlimefunItemStack THORNIUM_SWORD_EPIC =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SWORD_EPIC",
             Material.NETHERITE_SWORD,
-            "&d&lEpic Sword",
-            "&f&lA Epic Sword of Thornium");
+            "&d&l史诗剑",
+            "&f&l一把精良的剑");
 
     public static final SlimefunItemStack THORNIUM_SWORD_LEGENDARY =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SWORD_LEGENDARY",
             Material.NETHERITE_SWORD,
-            "&6&lLegendary Sword",
-            "&f&lA Legendary Sword of Thornium");
+            "&6&l传说剑",
+            "&f&l它曾在历史书上出现过");
 
     public static final SlimefunItemStack THORNIUM_SWORD_SUPREME =
         new SlimefunItemStack(
             "WEAPONS_THORNIUM_SWORD_SUPREME",
             Material.NETHERITE_SWORD,
-            "&4&lSupreme Sword",
-            "&f&lA Supreme Sword of Thornium");
+            "&4&l至尊剑",
+            "&f&l至尊的终极之剑");
 }

@@ -13,8 +13,8 @@ public final class ToolsBasic {
         new SlimefunItemStack(
             "TOOLS_ADAMANTIUM_AXE",
             Material.DIAMOND_AXE,
-            "&f&lAdamantium Axe",
-            "&f&lA Axe of Adamantium");
+            "&f&l精金斧",
+            "&f&l由精金制成");
     public static final ItemStack[] RECIPE_ADAMANTIUM_AXE = {
         SupremeComponents.ADAMANTIUM_PLATE,
         SupremeComponents.ADAMANTIUM_PLATE,
@@ -29,7 +29,10 @@ public final class ToolsBasic {
 
     public static final SlimefunItemStack AURUM_AXE =
         new SlimefunItemStack(
-            "TOOLS_AURUM_AXE", Material.DIAMOND_AXE, "&f&lAurum Axe", "&f&lA Axe of Aurum");
+            "TOOLS_AURUM_AXE",
+            Material.DIAMOND_AXE,
+            "&f&l金合金斧",
+            "&f&l由金合金制成");
     public static final ItemStack[] RECIPE_AURUM_AXE = {
         SupremeComponents.AURUM_PLATE,
         SupremeComponents.AURUM_PLATE,
@@ -44,7 +47,10 @@ public final class ToolsBasic {
 
     public static final SlimefunItemStack TITANIUM_AXE =
         new SlimefunItemStack(
-            "TOOLS_TITANIUM_AXE", Material.DIAMOND_AXE, "&f&lTitanium Axe", "&f&lA Axe of Titanium");
+            "TOOLS_TITANIUM_AXE",
+            Material.DIAMOND_AXE,
+            "&f&l钛合金斧",
+            "&f&l由钛合金制成");
     public static final ItemStack[] RECIPE_TITANIUM_AXE = {
         SupremeComponents.TITANIUM_PLATE,
         SupremeComponents.TITANIUM_PLATE,
@@ -61,8 +67,8 @@ public final class ToolsBasic {
         new SlimefunItemStack(
             "TOOLS_ADAMANTIUM_PICKAXE",
             Material.DIAMOND_PICKAXE,
-            "&f&lAdamantium Pickaxe",
-            "&f&lA Pickaxe of Adamantium");
+            "&f&l精金镐",
+            "&f&l由精金制成");
     public static final ItemStack[] RECIPE_ADAMANTIUM_PICKAXE = {
         SupremeComponents.ADAMANTIUM_PLATE,
         SupremeComponents.ADAMANTIUM_PLATE,
@@ -79,8 +85,8 @@ public final class ToolsBasic {
         new SlimefunItemStack(
             "TOOLS_AURUM_PICKAXE",
             Material.DIAMOND_PICKAXE,
-            "&f&lAurum Pickaxe",
-            "&f&lA Pickaxe of Aurum");
+            "&f&l金合金镐",
+            "&f&l由金合金制成");
     public static final ItemStack[] RECIPE_AURUM_PICKAXE = {
         SupremeComponents.AURUM_PLATE,
         SupremeComponents.AURUM_PLATE,
@@ -97,8 +103,8 @@ public final class ToolsBasic {
         new SlimefunItemStack(
             "TOOLS_TITANIUM_PICKAXE",
             Material.DIAMOND_PICKAXE,
-            "&f&lTitanium Pickaxe",
-            "&f&lA Pickaxe of Titanium");
+            "&f&l钛合金镐",
+            "&f&l由钛合金制成");
     public static final ItemStack[] RECIPE_TITANIUM_PICKAXE = {
         SupremeComponents.TITANIUM_PLATE,
         SupremeComponents.TITANIUM_PLATE,
@@ -115,8 +121,8 @@ public final class ToolsBasic {
         new SlimefunItemStack(
             "TOOLS_ADAMANTIUM_SHOVEL",
             Material.DIAMOND_SHOVEL,
-            "&f&lAdamantium Shovel",
-            "&f&lA Shovel of Adamantium");
+            "&f&l精金锹",
+            "&f&l由精金制成");
     public static final ItemStack[] RECIPE_ADAMANTIUM_SHOVEL = {
         null, SupremeComponents.ADAMANTIUM_PLATE, null,
         null, new ItemStack(Material.STICK), null,
@@ -127,8 +133,8 @@ public final class ToolsBasic {
         new SlimefunItemStack(
             "TOOLS_AURUM_SHOVEL",
             Material.DIAMOND_SHOVEL,
-            "&f&lAurum Shovel",
-            "&f&lA Shovel of Aurum");
+            "&f&l金合金锹",
+            "&f&l由金合金制成");
     public static final ItemStack[] RECIPE_AURUM_SHOVEL = {
         null, SupremeComponents.AURUM_PLATE, null,
         null, new ItemStack(Material.STICK), null,
@@ -139,8 +145,8 @@ public final class ToolsBasic {
         new SlimefunItemStack(
             "TOOLS_TITANIUM_SHOVEL",
             Material.DIAMOND_SHOVEL,
-            "&f&lTitanium Shovel",
-            "&f&lA Shovel of Titanium");
+            "&f&l钛合金锹",
+            "&f&l由钛合金制成");
     public static final ItemStack[] RECIPE_TITANIUM_SHOVEL = {
         null, SupremeComponents.TITANIUM_PLATE, null,
         null, new ItemStack(Material.STICK), null,

@@ -13,8 +13,8 @@ public final class WeaponsBasic {
         new SlimefunItemStack(
             "WEAPONS_ADAMANTIUM_SWORD",
             Material.DIAMOND_SWORD,
-            "&f&lAdamantium Sword",
-            "&f&lA Sword of Adamantium");
+            "&f&l精金剑",
+            "&f&l由精金制成");
     public static final ItemStack[] RECIPE_ADAMANTIUM_SWORD = {
         null, SupremeComponents.ADAMANTIUM_PLATE, null,
         null, SupremeComponents.ADAMANTIUM_PLATE, null,
@@ -23,7 +23,10 @@ public final class WeaponsBasic {
 
     public static final SlimefunItemStack AURUM_SWORD =
         new SlimefunItemStack(
-            "WEAPONS_AURUM_SWORD", Material.DIAMOND_SWORD, "&f&lAurum Sword", "&f&lA Sword of Aurum");
+            "WEAPONS_AURUM_SWORD",
+            Material.DIAMOND_SWORD,
+            "&f&l金合金剑",
+            "&f&l由金合金制成");
     public static final ItemStack[] RECIPE_AURUM_SWORD = {
         null, SupremeComponents.AURUM_PLATE, null,
         null, SupremeComponents.AURUM_PLATE, null,
@@ -34,8 +37,8 @@ public final class WeaponsBasic {
         new SlimefunItemStack(
             "WEAPONS_TITANIUM_SWORD",
             Material.DIAMOND_SWORD,
-            "&f&lTitanium Sword",
-            "&f&lA Sword of Titanium");
+            "&f&l钛合金剑",
+            "&f&l由钛合金制成");
     public static final ItemStack[] RECIPE_TITANIUM_SWORD = {
         null, SupremeComponents.TITANIUM_PLATE, null,
         null, SupremeComponents.TITANIUM_PLATE, null,

@@ -25,7 +25,7 @@ public class SupremeCapacitor {
         new SlimefunItemStack(
             "AURUM_CAPACITOR",
             "db2b1c052e84a4ad245a4d1ca5b10bd7f5249af0ca373f99174ce7990e597836",
-            "&9Aurum Capacitor",
+            "&9金电容",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.CAPACITOR),
             UtilEnergy.energyCapacity(AURUM_CAPACITY));
@@ -49,7 +49,7 @@ public class SupremeCapacitor {
         new SlimefunItemStack(
             "TITANIUM_CAPACITOR",
             "b30ad864b265ab178a03e27fc249a1e32941e007486febd0059e4e3b76c11958",
-            "&9Titanium Capacitor",
+            "&9钛电容",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.CAPACITOR),
             UtilEnergy.energyCapacity(TITANIUM_CAPACITY));
@@ -65,7 +65,7 @@ public class SupremeCapacitor {
         new SlimefunItemStack(
             "ADAMANTIUM_CAPACITOR",
             "9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38",
-            "&9Adamantium Capacitor",
+            "&9精金电容",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.CAPACITOR),
             UtilEnergy.energyCapacity(ADAMANTIUM_CAPACITY));
@@ -82,7 +82,7 @@ public class SupremeCapacitor {
         new SlimefunItemStack(
             "THORNIUM_CAPACITOR",
             "9aab01a5d9512e3175bf3af2edbfd59419dc5662605c42c91730e711254efcc4",
-            "&9Thornium Capacitor",
+            "&9钍电容",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.CAPACITOR),
             UtilEnergy.energyCapacity(THORNIUM_CAPACITY));
@@ -96,9 +96,9 @@ public class SupremeCapacitor {
         new SlimefunItemStack(
             "SUPREME_CAPACITOR",
             "77400ea19dbd84f75c39ad6823ac4ef786f39f48fc6f84602366ac29b837422",
-            "&9Supreme Capacitor",
-            "&c&oDo not use more than ",
-            "&c&o1 per energy network",
+            "&9至尊电容",
+            "&c&o不要在一个能源网络中",
+            "&c&o放置多个至尊电容",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.CAPACITOR),
             UtilEnergy.energyCapacity(null));

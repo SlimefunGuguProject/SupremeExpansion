@@ -31,8 +31,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_AURUM_HELMET",
             Material.DIAMOND_HELMET,
-            "&f&lAurum Helmet",
-            "&f&lA Helmet of Aurum");
+            "&f&l金合金头盔",
+            "&f&l由金合金制成");
     public static final ItemStack[] RECIPE_AURUM_HELMET = {
         SupremeComponents.AURUM_PLATE,
         SupremeComponents.AURUM_PLATE,
@@ -49,8 +49,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_TITANIUM_HELMET",
             Material.DIAMOND_HELMET,
-            "&f&lTitanium Helmet",
-            "&f&lA Helmet of Titanium");
+            "&f&l钛合金头盔",
+            "&f&l由钛合金制成");
     public static final ItemStack[] RECIPE_TITANIUM_HELMET = {
         SupremeComponents.TITANIUM_PLATE,
         SupremeComponents.TITANIUM_PLATE,
@@ -67,8 +67,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_ADAMANTIUM_CHESTPLATE",
             Material.DIAMOND_CHESTPLATE,
-            "&f&lAdamantium Chestplate",
-            "&f&lA Chestplate of Adamantium");
+            "&f&l精金胸甲",
+            "&f&l由精金制成");
     public static final ItemStack[] RECIPE_ADAMANTIUM_CHESTPLATE = {
         SupremeComponents.ADAMANTIUM_PLATE, null, SupremeComponents.ADAMANTIUM_PLATE,
         SupremeComponents.ADAMANTIUM_PLATE, SupremeComponents.ADAMANTIUM_PLATE,
@@ -81,8 +81,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_AURUM_CHESTPLATE",
             Material.DIAMOND_CHESTPLATE,
-            "&f&lAurum Chestplate",
-            "&f&lA Chestplate of Aurum");
+            "&f&l金合金胸甲",
+            "&f&l由金合金制成");
     public static final ItemStack[] RECIPE_AURUM_CHESTPLATE = {
         SupremeComponents.AURUM_PLATE, null, SupremeComponents.AURUM_PLATE,
         SupremeComponents.AURUM_PLATE, SupremeComponents.AURUM_PLATE, SupremeComponents.AURUM_PLATE,
@@ -93,8 +93,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_TITANIUM_CHESTPLATE",
             Material.DIAMOND_CHESTPLATE,
-            "&f&lTitanium Chestplate",
-            "&f&lA Chestplate of Titanium");
+            "&f&l钛合金胸甲",
+            "&f&l由钛合金制成");
     public static final ItemStack[] RECIPE_TITANIUM_CHESTPLATE = {
         SupremeComponents.TITANIUM_PLATE, null, SupremeComponents.TITANIUM_PLATE,
         SupremeComponents.TITANIUM_PLATE, SupremeComponents.TITANIUM_PLATE,
@@ -107,8 +107,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_ADAMANTIUM_LEGGINGS",
             Material.DIAMOND_LEGGINGS,
-            "&f&lAdamantium Legging",
-            "&f&lA Legging of Adamantium");
+            "&f&l精金护腿",
+            "&f&l由精金制成");
     public static final ItemStack[] RECIPE_ADAMANTIUM_LEGGINGS = {
         SupremeComponents.ADAMANTIUM_PLATE, SupremeComponents.ADAMANTIUM_PLATE,
         SupremeComponents.ADAMANTIUM_PLATE,
@@ -120,8 +120,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_AURUM_LEGGINGS",
             Material.DIAMOND_LEGGINGS,
-            "&f&lAurum Legging",
-            "&f&lA Legging of Aurum");
+            "&f&l金合金护腿",
+            "&f&l由金合金制成");
     public static final ItemStack[] RECIPE_AURUM_LEGGINGS = {
         SupremeComponents.AURUM_PLATE, SupremeComponents.AURUM_PLATE, SupremeComponents.AURUM_PLATE,
         SupremeComponents.AURUM_PLATE, null, SupremeComponents.AURUM_PLATE,
@@ -132,8 +132,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_TITANIUM_LEGGINGS",
             Material.DIAMOND_LEGGINGS,
-            "&f&lTitanium Legging",
-            "&f&lA Legging of Titanium");
+            "&f&l钛合金护腿",
+            "&f&l由钛合金制成");
     public static final ItemStack[] RECIPE_TITANIUM_LEGGINGS = {
         SupremeComponents.TITANIUM_PLATE, SupremeComponents.TITANIUM_PLATE,
         SupremeComponents.TITANIUM_PLATE,
@@ -145,8 +145,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_ADAMANTIUM_BOOTS",
             Material.DIAMOND_BOOTS,
-            "&f&lAdamantium Boots",
-            "&f&lA Boots of Adamantium");
+            "&f&l精金靴子",
+            "&f&l由精金制成");
     public static final ItemStack[] RECIPE_ADAMANTIUM_BOOTS = {
         null,
         null,
@@ -161,7 +161,10 @@ public final class ArmorBasic {
 
     public static final SlimefunItemStack AURUM_BOOTS =
         new SlimefunItemStack(
-            "ARMOR_AURUM_BOOTS", Material.DIAMOND_BOOTS, "&f&lAurum Boots", "&f&lA Boots of Aurum");
+            "ARMOR_AURUM_BOOTS",
+            Material.DIAMOND_BOOTS,
+            "&f&l金合金靴子",
+            "&f&l由金合金制成");
     public static final ItemStack[] RECIPE_AURUM_BOOTS = {
         null,
         null,
@@ -178,8 +181,8 @@ public final class ArmorBasic {
         new SlimefunItemStack(
             "ARMOR_TITANIUM_BOOTS",
             Material.DIAMOND_BOOTS,
-            "&f&lTitanium Boots",
-            "&f&lA Boots of Titanium");
+            "&f&l钛合金靴子",
+            "&f&l由钛合金制成");
     public static final ItemStack[] RECIPE_TITANIUM_BOOTS = {
         null,
         null,
