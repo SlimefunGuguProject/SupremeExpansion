@@ -1,21 +1,23 @@
-# Supreme Expansion
-Supreme Expansion is a addon to Slimefun 4 which brings various new resources to craft powerful contains items, gear and machines
+# SupremeExpansion 至尊研究院
 
+至尊研究院是一个 Slimefun 附属，添加了100多种全新的资源，可以让你合成强力的新物品、武器、工具与防具。你可以使用钛合金、金合金、精金、钍来制作魔法、稀有、史诗、传说、至尊等级的物品。该附属还增加了12种全新的发电机，5种电容，还有更多...
 
-## Requirements
+## 下载
 
-Minecraft Version: 1.17+ 
+点击这里下载 SupremeExpansion: [下载 SupremeExpansion](https://builds.guizhanss.net/SlimefunGuguProject/SupremeExpansion/master)
 
-Slimefun Version: RC-31
+<p align="center">
+  <a href="https://github.com/SlimefunGuguProject/SupremeExpansion/actions/workflows/maven.yml">
+    <img src="https://github.com/SlimefunGuguProject/SupremeExpansion/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
+  </a>
+  <a href="https://builds.guizhanss.net/SlimefunGuguProject/SupremeExpansion/master">
+    <img src="https://builds.guizhanss.net/f/SlimefunGuguProject/SupremeExpansion/master/badge.svg" alt="Build status"/>
+  </a>
+</p>
 
+## 反馈 / 建议
 
-### [Download](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/)
-[![Build Status](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master/badge.svg)](https://thebusybiscuit.github.io/builds/RelativoBR/SupremeExpansion/master)
-
-
-## Bugs/Suggestions
-
-Make a new issue, pull request, or contact me on discord @RelativoBR#9577
+你可以在问题追踪器提交问题，或发起pr。你也可以在discord上联系 : @WilianSantos#7381 或 @RelativoBR#9577
 
 <p>
   <a href="https://discord.gg/slimefun">
@@ -25,88 +27,3 @@ Make a new issue, pull request, or contact me on discord @RelativoBR#9577
     <img src="https://discordapp.com/api/guilds/809178621424041997/widget.png?style=banner3" alt="Discord Invite"/>
   </a>
 </p>
-
-## Machines
-- **Core Fabricator** - MultiBlock Machine - You can craft core here
-- **Gear Fabricator** - MultiBlock Machine - You can craft weapons, armor and tools here
-- **Magical Fabricator** - MultiBlock Machine - You can craft magical here
-- **Electric Core Machine** - Craft resource of core
-- **Electric Core Machine II** - Craft resource of core
-- **Electric Core Machine III** - Craft resource of core
-- **Coal Quarry** - Generate basic resource
-- **Iron Quarry** - Generate basic resource
-- **Gold Quarry** - Generate basic resource
-- **Diamond Quarry** - Generate basic resource
-- **Thornium Quarry** - Generate advanced resource
-- **Nuggets of Supreme Quarry** - Generate advanced resource
-
-
-## Generators
-- **Aurum Capacitor** 
-- **Titanium Capacitor** 
-- **Adamantium Capacitor** 
-- **Thornium Capacitor** 
-- **Supreme Capacitor**
-- **Basic Ignis Generator** - Need fire under this block to work
-- **Ignis Generator** - Need fire under this block to work
-- **Basic Ventus Generator** - It needs to be with its faces in the wind to work
-- **Ventus Generator** - It needs to be with its faces in the wind to work
-- **Basic Aqua Generator** - Need water under this block to work
-- **Aqua Generator** - Need water under this block to work
-- **Basic Lux Generator** - Needs to receive sunlight for moonlight to work
-- **Lux Generator** - Needs to receive sunlight for moonlight to work
-- **Basic Lumium Generator** - Needs to be below ground to work
-- **Lumium Generator** - Needs to be below ground to work
-- **Thornium Generator** - Generates energy anywhere
-- **Supreme Generator** - Generates energy anywhere
-
-
-## Gear / Tools
-- **Aurum Tools** - Basic tier
-- **Aurum Weapons** - Basic tier
-- **Aurum Armor** - Basic tier
-- **Titanium Tools** - Basic tier
-- **Titanium Weapons** - Basic tier
-- **Titanium Armor** - Basic tier
-- **Adamantium Tools** - Basic tier
-- **Adamantium Weapons** - Basic tier
-- **Adamantium Armor** - Basic tier
-- **Thornium Tools** - Advanced tier
-- **Thornium Weapons** - Advanced tier
-- **Thornium Armor** - Advanced tier
-- **Magic Tools** - Advanced tier
-- **Magic Weapons** - Advanced tier
-- **Magic Armor** - Advanced tier
-- **Rare Tools** - Advanced tier
-- **Rare Weapons** - Advanced tier
-- **Rare Armor** - Advanced tier
-- **Epic Tools** - Endgame tier
-- **Epic Weapons** - Endgame tier
-- **Epic Armor** - Endgame tier
-- **Legendary Tools** - Endgame tier
-- **Legendary Weapons** - Endgame tier
-- **Legendary Armor** - Endgame tier
-- **Supreme Tools** - Endgame tier
-- **Supreme Weapons** - Endgame tier
-- **Supreme Armor** - Endgame tier
-
-
-## Resource Core
-- **Core of Life** - This core contains fragments of life that have been collected by the world
-- **Core of Death** - This core contains the souls of various entities that have gone beyond
-- **Core of Color** - This core contains several colors that have been collected around the world
-- **Core of Block** - This core contains several blocks that have been collected around the world
-- **Core of Nature** - This core contains several natural that have been collected around the world
-- **Core of Alloy** - This core contains several ores that have been collected around the world
-
-
-## Resource Magical
-- **Cetrus Lux** - A super Lux scepter
-- **Cetrus Ventus** - A super Ventus scepter
-- **Cetrus Lumium** - A super Lumium scepter
-- **Cetrus Aqua** - A super Aqua scepter
-- **Cetrus Ignis** - A super Ignis scepter
-- **Attribute Magic** - A super Magic attribute with special effect
-- **Attribute Bomb** - A super Bomb attribute with special effects
-- **Attribute Fortune** - A super Fortune attribute with special effects
-- **Attribute Impetus** - A super Impetus attribute with special effects

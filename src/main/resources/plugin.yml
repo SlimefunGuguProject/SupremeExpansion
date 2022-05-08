@@ -1,8 +1,8 @@
 name: SupremeExpansion
-author: RelativoBR, Especttra e WilianSantos
-description: SlimeFun custom contains supreme items, weapons and machines
+author: RelativoBR, Especttra e WilianSantosBR
+description: Slimefun custom contains supreme items, weapons and machines
 main: com.github.relativobr.supremeexpansion.SupremeExpansion
 website: https://github.com/RelativoBR/SupremeExpansion
 depend: [Slimefun]
 version: ${project.version}
-api-version: 1.18
+api-version: 1.17
