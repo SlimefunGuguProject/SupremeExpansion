@@ -12,9 +12,9 @@ public class SupremeCoreDeath {
         new SlimefunItemStack(
             "RESOURCE_CORE_PORKCHOP",
             "42e0bb88d8bd55d1f946461b3ee6c22f353ba74847ed2412856bb85cf9f63",
-            "&a至尊信标",
+            "&a至尊猪肉",
             "",
-            "&7一种超级信标");
+            "&7一种超级猪肉");
     public static final CustomCoreRecipe RECIPE_RESOURCE_CORE_PORKCHOP =
         new CustomCoreRecipe(RESOURCE_CORE_PORKCHOP, Material.PORKCHOP, Material.BLAZE_ROD);
 
