@@ -4,6 +4,8 @@
 
 ## 下载
 
+**该附属已更新到2.0版本，本仓库是1.0版本。我们暂时还没有翻译完2.0版本，请等待一段时间。**
+
 点击这里下载 SupremeExpansion: [下载 SupremeExpansion](https://builds.guizhanss.net/SlimefunGuguProject/SupremeExpansion/master)
 
 <p align="center">
